@@ -13,6 +13,7 @@ This is a sample solution for caching and searching for URLs in a lookup table
 * File [URL_Lookup_url_mapping.sql] sample mysql lookup table
 * Folder [Solr_config_files] contains sorl core and configurations schema, db importer
 * File [examples] contains some query examples
+* Foler [sample_data_generator] contains shell script and python script for generating random data in the database just for testing
 
 ### How do I get set up? ###
 
