@@ -1,0 +1,422 @@
+2016-12-12 01:33:19.999 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.8.v20160314
+2016-12-12 01:33:20.315 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.3.0
+2016-12-12 01:33:20.316 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2016-12-12 01:33:20.316 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/mansk/solr-6.3.0
+2016-12-12 01:33:20.383 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2016-12-12T01:33:20.317Z
+2016-12-12 01:33:20.383 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2016-12-12 01:33:20.401 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/mansk/solr-6.3.0/server/solr
+2016-12-12 01:33:20.407 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/mansk/solr-6.3.0/server/solr/solr.xml
+2016-12-12 01:33:20.686 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2016-12-12 01:33:20.748 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 2 core definitions underneath /home/mansk/solr-6.3.0/server/solr
+2016-12-12 01:33:20.757 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [url_lookup_core, url_core]
+2016-12-12 01:33:20.797 INFO  (main) [   ] o.e.j.s.ServerConnector Started ServerConnector@6a8b41af{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2016-12-12 01:33:20.797 INFO  (main) [   ] o.e.j.s.Server Started @1351ms
+2016-12-12 01:33:20.850 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader [url_core] Added 53 libs to classloader, from paths: [/home/mansk/solr-6.3.0/contrib/clustering/lib, /home/mansk/solr-6.3.0/contrib/dataimporthandler/lib, /home/mansk/solr-6.3.0/contrib/extraction/lib, /home/mansk/solr-6.3.0/contrib/langid/lib, /home/mansk/solr-6.3.0/contrib/velocity/lib, /home/mansk/solr-6.3.0/dist]
+2016-12-12 01:33:20.857 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader [url_lookup_core] Added 53 libs to classloader, from paths: [/home/mansk/solr-6.3.0/contrib/clustering/lib, /home/mansk/solr-6.3.0/contrib/dataimporthandler/lib, /home/mansk/solr-6.3.0/contrib/extraction/lib, /home/mansk/solr-6.3.0/contrib/langid/lib, /home/mansk/solr-6.3.0/contrib/velocity/lib, /home/mansk/solr-6.3.0/dist]
+2016-12-12 01:33:21.065 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.3.0
+2016-12-12 01:33:21.077 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.3.0
+2016-12-12 01:33:21.250 WARN  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
+2016-12-12 01:33:21.353 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema [url_core] Schema name=example-basic
+2016-12-12 01:33:21.419 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema [url_lookup_core] Schema name=example-basic
+2016-12-12 01:33:22.311 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema Loaded schema example-basic/1.6 with uniqueid field id
+2016-12-12 01:33:22.312 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema Loaded schema example-basic/1.6 with uniqueid field id
+2016-12-12 01:33:22.385 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.CoreContainer Creating SolrCore 'url_core' using configuration from instancedir /home/mansk/solr-6.3.0/server/solr/url_core
+2016-12-12 01:33:22.413 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.CoreContainer Creating SolrCore 'url_lookup_core' using configuration from instancedir /home/mansk/solr-6.3.0/server/solr/url_lookup_core
+2016-12-12 01:33:22.459 INFO  (coreLoadExecutor-6-thread-1) [   x:url_lookup_core] o.a.s.c.SolrCore [[url_lookup_core] ] Opening new SolrCore at [/home/mansk/solr-6.3.0/server/solr/url_lookup_core], dataDir=[/home/mansk/solr-6.3.0/server/solr/url_lookup_core/data/]
+2016-12-12 01:33:22.459 INFO  (coreLoadExecutor-6-thread-2) [   x:url_core] o.a.s.c.SolrCore [[url_core] ] Opening new SolrCore at [/home/mansk/solr-6.3.0/server/solr/url_core], dataDir=[/home/mansk/solr-6.3.0/server/solr/url_core/data/]
+2016-12-12 01:33:22.529 INFO  (coreLoadExecutor-6-thread-1) [   x:url_lookup_core] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2016-12-12 01:33:22.529 INFO  (coreLoadExecutor-6-thread-2) [   x:url_core] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2016-12-12 01:33:22.919 INFO  (coreLoadExecutor-6-thread-1) [   x:url_lookup_core] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2016-12-12 01:33:22.919 INFO  (coreLoadExecutor-6-thread-2) [   x:url_core] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2016-12-12 01:33:22.919 INFO  (coreLoadExecutor-6-thread-1) [   x:url_lookup_core] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2016-12-12 01:33:22.919 INFO  (coreLoadExecutor-6-thread-2) [   x:url_core] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2016-12-12 01:33:22.939 INFO  (coreLoadExecutor-6-thread-2) [   x:url_core] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2016-12-12 01:33:22.939 INFO  (coreLoadExecutor-6-thread-1) [   x:url_lookup_core] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2016-12-12 01:33:22.940 INFO  (coreLoadExecutor-6-thread-2) [   x:url_core] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2016-12-12 01:33:22.940 INFO  (coreLoadExecutor-6-thread-1) [   x:url_lookup_core] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2016-12-12 01:33:23.016 INFO  (coreLoadExecutor-6-thread-1) [   x:url_lookup_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@5359857e[url_lookup_core] main]
+2016-12-12 01:33:23.026 INFO  (coreLoadExecutor-6-thread-1) [   x:url_lookup_core] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/mansk/solr-6.3.0/server/solr/url_lookup_core/conf
+2016-12-12 01:33:23.048 INFO  (coreLoadExecutor-6-thread-1) [   x:url_lookup_core] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2016-12-12 01:33:23.052 INFO  (coreLoadExecutor-6-thread-2) [   x:url_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@5d3e1928[url_core] main]
+2016-12-12 01:33:23.057 INFO  (coreLoadExecutor-6-thread-2) [   x:url_core] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/mansk/solr-6.3.0/server/solr/url_core/conf
+2016-12-12 01:33:23.058 INFO  (coreLoadExecutor-6-thread-2) [   x:url_core] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2016-12-12 01:33:23.060 INFO  (coreLoadExecutor-6-thread-1) [   x:url_lookup_core] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2016-12-12 01:33:23.060 INFO  (coreLoadExecutor-6-thread-2) [   x:url_core] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2016-12-12 01:33:23.064 INFO  (coreLoadExecutor-6-thread-1) [   x:url_lookup_core] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /home/mansk/solr-6.3.0/server/solr/url_lookup_core/conf/elevate.xml
+2016-12-12 01:33:23.064 INFO  (coreLoadExecutor-6-thread-2) [   x:url_core] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /home/mansk/solr-6.3.0/server/solr/url_core/conf/elevate.xml
+2016-12-12 01:33:23.084 INFO  (coreLoadExecutor-6-thread-1) [   x:url_lookup_core] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2016-12-12 01:33:23.084 INFO  (coreLoadExecutor-6-thread-2) [   x:url_core] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2016-12-12 01:33:23.112 INFO  (searcherExecutor-8-thread-1-processing-x:url_lookup_core) [   x:url_lookup_core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@5359857e[url_lookup_core] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2016-12-12 01:33:23.112 INFO  (searcherExecutor-8-thread-1-processing-x:url_lookup_core) [   x:url_lookup_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-12-12 01:33:23.112 INFO  (searcherExecutor-8-thread-1-processing-x:url_lookup_core) [   x:url_lookup_core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2016-12-12 01:33:23.112 INFO  (searcherExecutor-8-thread-1-processing-x:url_lookup_core) [   x:url_lookup_core] o.a.s.c.SolrCore [url_lookup_core] Registered new searcher Searcher@5359857e[url_lookup_core] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2016-12-12 01:33:23.114 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@5d3e1928[url_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1i(6.3.0):C4)))}
+2016-12-12 01:33:23.115 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-12-12 01:33:23.115 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2016-12-12 01:33:23.115 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.SolrCore [url_core] Registered new searcher Searcher@5d3e1928[url_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1i(6.3.0):C4)))}
+2016-12-12 01:33:23.116 INFO  (coreLoadExecutor-6-thread-1) [   x:url_lookup_core] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1553472058153762816
+2016-12-12 01:33:29.183 INFO  (qtp1528637575-15) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1481506409128} status=0 QTime=8
+2016-12-12 01:33:29.192 INFO  (qtp1528637575-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481506409000} status=0 QTime=27
+2016-12-12 01:33:29.236 INFO  (qtp1528637575-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481506409002} status=0 QTime=65
+2016-12-12 01:33:38.381 INFO  (qtp1528637575-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481506418259} status=0 QTime=0
+2016-12-12 01:33:38.389 INFO  (qtp1528637575-20) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1481506418354} status=0 QTime=0
+2016-12-12 01:33:38.398 INFO  (qtp1528637575-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481506418260} status=0 QTime=10
+2016-12-12 01:33:42.614 INFO  (qtp1528637575-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481506418259} status=0 QTime=0
+2016-12-12 01:33:42.625 INFO  (qtp1528637575-13) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1481506422593} status=0 QTime=6
+2016-12-12 01:33:42.652 INFO  (qtp1528637575-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481506418260} status=0 QTime=36
+2016-12-12 01:33:44.359 INFO  (qtp1528637575-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481506418259} status=0 QTime=0
+2016-12-12 01:33:44.371 INFO  (qtp1528637575-19) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1481506418354} status=0 QTime=0
+2016-12-12 01:33:44.376 INFO  (qtp1528637575-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481506418260} status=0 QTime=14
+2016-12-12 01:33:44.429 INFO  (qtp1528637575-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481506418259} status=0 QTime=0
+2016-12-12 01:33:44.440 INFO  (qtp1528637575-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481506418260} status=0 QTime=10
+2016-12-12 01:33:44.441 INFO  (qtp1528637575-13) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1481506418354} status=0 QTime=0
+2016-12-12 01:33:44.450 INFO  (qtp1528637575-20) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1481506418355} status=0 QTime=8
+2016-12-12 01:33:44.470 INFO  (qtp1528637575-14) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481506418355} status=0 QTime=0
+2016-12-12 01:33:46.920 INFO  (qtp1528637575-15) [   x:url_lookup_core] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2016-12-12 01:33:46.930 INFO  (qtp1528637575-15) [   x:url_lookup_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-12 01:33:46.931 INFO  (qtp1528637575-15) [   x:url_lookup_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-12 01:33:46.931 INFO  (qtp1528637575-15) [   x:url_lookup_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-12 01:33:46.931 INFO  (qtp1528637575-15) [   x:url_lookup_core] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2016-12-12 01:33:46.931 INFO  (qtp1528637575-15) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=reload-config&_=1481506418355} status=0 QTime=11
+2016-12-12 01:33:46.945 INFO  (qtp1528637575-12) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1481506418354} status=0 QTime=0
+2016-12-12 01:33:46.953 INFO  (qtp1528637575-18) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1481506418355} status=0 QTime=0
+2016-12-12 01:33:46.961 INFO  (qtp1528637575-17) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481506418355} status=0 QTime=0
+2016-12-12 01:33:58.475 INFO  (qtp1528637575-20) [   x:url_lookup_core] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2016-12-12 01:33:58.479 INFO  (qtp1528637575-20) [   x:url_lookup_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-12 01:33:58.481 INFO  (qtp1528637575-20) [   x:url_lookup_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-12 01:33:58.482 INFO  (qtp1528637575-20) [   x:url_lookup_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-12 01:33:58.482 INFO  (qtp1528637575-20) [   x:url_lookup_core] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2016-12-12 01:33:58.502 INFO  (qtp1528637575-20) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={command=full-import} status=0 QTime=27
+2016-12-12 01:33:58.502 INFO  (Thread-14) [   x:url_lookup_core] o.a.s.h.d.DataImporter Starting Full Import
+2016-12-12 01:33:58.525 WARN  (Thread-14) [   x:url_lookup_core] o.a.s.h.d.SimplePropertiesWriter Unable to read: dataimport.properties
+2016-12-12 01:33:58.675 INFO  (Thread-14) [   x:url_lookup_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity id with URL: jdbc:mysql://localhost:3306/URL_Lookup
+2016-12-12 01:33:58.908 INFO  (Thread-14) [   x:url_lookup_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 232
+2016-12-12 01:33:58.913 ERROR (Thread-14) [   x:url_lookup_core] o.a.s.h.d.DocBuilder Exception while processing: id document : SolrInputDocument(fields: []):org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: SELECT id as 'id' , url, url2 from url_mapping Processing Document # 1
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:69)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:327)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.createResultSetIterator(JdbcDataSource.java:288)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:283)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:52)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.initQuery(SqlEntityProcessor.java:59)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.nextRow(SqlEntityProcessor.java:73)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:244)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:475)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.mysql.jdbc.exceptions.MySQLSyntaxErrorException: Unknown column 'url' in 'field list'
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:936)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:2985)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1631)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1723)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3277)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3206)
+	at com.mysql.jdbc.Statement.execute(Statement.java:727)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.executeStatement(JdbcDataSource.java:349)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:321)
+	... 14 more
+
+2016-12-12 01:33:58.914 INFO  (Thread-14) [   x:url_lookup_core] o.a.s.u.p.LogUpdateProcessorFactory [url_lookup_core]  webapp=/solr path=/dataimport params={command=full-import} status=0 QTime=27{deleteByQuery=*:* (-1553472095365627904)} 0 439
+2016-12-12 01:33:58.915 ERROR (Thread-14) [   x:url_lookup_core] o.a.s.h.d.DataImporter Full Import failed:java.lang.RuntimeException: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: SELECT id as 'id' , url, url2 from url_mapping Processing Document # 1
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:270)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: SELECT id as 'id' , url, url2 from url_mapping Processing Document # 1
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:416)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	... 4 more
+Caused by: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: SELECT id as 'id' , url, url2 from url_mapping Processing Document # 1
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:69)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:327)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.createResultSetIterator(JdbcDataSource.java:288)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:283)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:52)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.initQuery(SqlEntityProcessor.java:59)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.nextRow(SqlEntityProcessor.java:73)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:244)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:475)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	... 6 more
+Caused by: com.mysql.jdbc.exceptions.MySQLSyntaxErrorException: Unknown column 'url' in 'field list'
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:936)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:2985)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1631)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1723)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3277)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3206)
+	at com.mysql.jdbc.Statement.execute(Statement.java:727)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.executeStatement(JdbcDataSource.java:349)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:321)
+	... 14 more
+
+2016-12-12 01:33:58.916 INFO  (Thread-14) [   x:url_lookup_core] o.a.s.u.DirectUpdateHandler2 start rollback{}
+2016-12-12 01:33:58.917 INFO  (Thread-14) [   x:url_lookup_core] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2016-12-12 01:33:58.918 INFO  (Thread-14) [   x:url_lookup_core] o.a.s.u.DirectUpdateHandler2 end_rollback
+2016-12-12 01:34:07.520 INFO  (qtp1528637575-21) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481506418355} status=0 QTime=0
+2016-12-12 01:34:09.033 INFO  (qtp1528637575-14) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481506418355} status=0 QTime=0
+2016-12-12 01:34:10.017 INFO  (qtp1528637575-19) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481506418355} status=0 QTime=0
+2016-12-12 01:34:11.457 INFO  (qtp1528637575-19) [   x:url_lookup_core] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2016-12-12 01:34:11.460 INFO  (qtp1528637575-19) [   x:url_lookup_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-12 01:34:11.460 INFO  (qtp1528637575-19) [   x:url_lookup_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-12 01:34:11.460 INFO  (qtp1528637575-19) [   x:url_lookup_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-12 01:34:11.460 INFO  (qtp1528637575-19) [   x:url_lookup_core] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2016-12-12 01:34:11.461 INFO  (Thread-16) [   x:url_lookup_core] o.a.s.h.d.DataImporter Starting Full Import
+2016-12-12 01:34:11.461 INFO  (qtp1528637575-19) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={core=url_lookup_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1481506418355&verbose=false} status=0 QTime=5
+2016-12-12 01:34:11.474 WARN  (Thread-16) [   x:url_lookup_core] o.a.s.h.d.SimplePropertiesWriter Unable to read: dataimport.properties
+2016-12-12 01:34:11.483 INFO  (qtp1528637575-12) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481506418355} status=0 QTime=3
+2016-12-12 01:34:11.490 INFO  (Thread-16) [   x:url_lookup_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@1b2e2a13[url_lookup_core] realtime]
+2016-12-12 01:34:11.500 INFO  (Thread-16) [   x:url_lookup_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity id with URL: jdbc:mysql://localhost:3306/URL_Lookup
+2016-12-12 01:34:11.532 INFO  (Thread-16) [   x:url_lookup_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 32
+2016-12-12 01:34:11.534 ERROR (Thread-16) [   x:url_lookup_core] o.a.s.h.d.DocBuilder Exception while processing: id document : SolrInputDocument(fields: []):org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: SELECT id as 'id' , url, url2 from url_mapping Processing Document # 1
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:69)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:327)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.createResultSetIterator(JdbcDataSource.java:288)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:283)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:52)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.initQuery(SqlEntityProcessor.java:59)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.nextRow(SqlEntityProcessor.java:73)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:244)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:475)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.mysql.jdbc.exceptions.MySQLSyntaxErrorException: Unknown column 'url' in 'field list'
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:936)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:2985)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1631)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1723)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3277)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3206)
+	at com.mysql.jdbc.Statement.execute(Statement.java:727)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.executeStatement(JdbcDataSource.java:349)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:321)
+	... 14 more
+
+2016-12-12 01:34:11.539 INFO  (Thread-16) [   x:url_lookup_core] o.a.s.u.p.LogUpdateProcessorFactory [url_lookup_core]  webapp=/solr path=/dataimport params={core=url_lookup_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1481506418355&verbose=false} status=0 QTime=5{deleteByQuery=*:* (-1553472108868141056)} 0 83
+2016-12-12 01:34:11.540 ERROR (Thread-16) [   x:url_lookup_core] o.a.s.h.d.DataImporter Full Import failed:java.lang.RuntimeException: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: SELECT id as 'id' , url, url2 from url_mapping Processing Document # 1
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:270)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: SELECT id as 'id' , url, url2 from url_mapping Processing Document # 1
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:416)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	... 4 more
+Caused by: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: SELECT id as 'id' , url, url2 from url_mapping Processing Document # 1
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:69)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:327)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.createResultSetIterator(JdbcDataSource.java:288)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:283)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:52)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.initQuery(SqlEntityProcessor.java:59)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.nextRow(SqlEntityProcessor.java:73)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:244)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:475)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	... 6 more
+Caused by: com.mysql.jdbc.exceptions.MySQLSyntaxErrorException: Unknown column 'url' in 'field list'
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:936)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:2985)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1631)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1723)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3277)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3206)
+	at com.mysql.jdbc.Statement.execute(Statement.java:727)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.executeStatement(JdbcDataSource.java:349)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:321)
+	... 14 more
+
+2016-12-12 01:34:11.541 INFO  (Thread-16) [   x:url_lookup_core] o.a.s.u.DirectUpdateHandler2 start rollback{}
+2016-12-12 01:34:11.543 INFO  (Thread-16) [   x:url_lookup_core] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2016-12-12 01:34:11.543 INFO  (Thread-16) [   x:url_lookup_core] o.a.s.u.DirectUpdateHandler2 end_rollback
+2016-12-12 01:34:14.794 INFO  (qtp1528637575-17) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481506418355} status=0 QTime=0
+2016-12-12 01:34:39.569 INFO  (qtp1528637575-17) [   x:url_lookup_core] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2016-12-12 01:34:39.572 INFO  (qtp1528637575-17) [   x:url_lookup_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-12 01:34:39.573 INFO  (qtp1528637575-17) [   x:url_lookup_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-12 01:34:39.573 INFO  (qtp1528637575-17) [   x:url_lookup_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-12 01:34:39.573 INFO  (qtp1528637575-17) [   x:url_lookup_core] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2016-12-12 01:34:39.573 INFO  (qtp1528637575-17) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=reload-config&_=1481506418355} status=0 QTime=4
+2016-12-12 01:34:39.591 INFO  (qtp1528637575-12) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1481506418354} status=0 QTime=1
+2016-12-12 01:34:39.592 INFO  (qtp1528637575-15) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1481506418355} status=0 QTime=0
+2016-12-12 01:34:39.612 INFO  (qtp1528637575-12) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481506418355} status=0 QTime=0
+2016-12-12 01:34:40.967 INFO  (qtp1528637575-14) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481506418355} status=0 QTime=0
+2016-12-12 01:34:41.913 INFO  (qtp1528637575-13) [   x:url_lookup_core] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2016-12-12 01:34:41.917 INFO  (qtp1528637575-13) [   x:url_lookup_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-12 01:34:41.917 INFO  (qtp1528637575-13) [   x:url_lookup_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-12 01:34:41.917 INFO  (qtp1528637575-13) [   x:url_lookup_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-12 01:34:41.917 INFO  (qtp1528637575-13) [   x:url_lookup_core] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2016-12-12 01:34:41.918 INFO  (Thread-17) [   x:url_lookup_core] o.a.s.h.d.DataImporter Starting Full Import
+2016-12-12 01:34:41.918 INFO  (qtp1528637575-13) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={core=url_lookup_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1481506418355&verbose=false} status=0 QTime=5
+2016-12-12 01:34:41.926 WARN  (Thread-17) [   x:url_lookup_core] o.a.s.h.d.SimplePropertiesWriter Unable to read: dataimport.properties
+2016-12-12 01:34:41.928 INFO  (Thread-17) [   x:url_lookup_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@536ae44b[url_lookup_core] realtime]
+2016-12-12 01:34:41.931 INFO  (qtp1528637575-18) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481506418355} status=0 QTime=0
+2016-12-12 01:34:41.939 INFO  (Thread-17) [   x:url_lookup_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity id with URL: jdbc:mysql://localhost:3306/URL_Lookup
+2016-12-12 01:34:41.950 INFO  (Thread-17) [   x:url_lookup_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 11
+2016-12-12 01:34:41.994 INFO  (Thread-17) [   x:url_lookup_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity url_from_text with URL: jdbc:mysql://localhost:3306/URL_Lookup
+2016-12-12 01:34:42.002 INFO  (Thread-17) [   x:url_lookup_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 8
+2016-12-12 01:34:42.008 INFO  (Thread-17) [   x:url_lookup_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity url_to_text with URL: jdbc:mysql://localhost:3306/URL_Lookup
+2016-12-12 01:34:42.022 INFO  (Thread-17) [   x:url_lookup_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 13
+2016-12-12 01:34:42.023 INFO  (Thread-17) [   x:url_lookup_core] o.a.s.h.d.DocBuilder Import completed successfully
+2016-12-12 01:34:42.024 INFO  (Thread-17) [   x:url_lookup_core] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-12-12 01:34:42.024 INFO  (Thread-17) [   x:url_lookup_core] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@6bfb31c0
+2016-12-12 01:34:42.089 INFO  (Thread-17) [   x:url_lookup_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@58ab3b26[url_lookup_core] main]
+2016-12-12 01:34:42.091 INFO  (Thread-17) [   x:url_lookup_core] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-12-12 01:34:42.092 INFO  (searcherExecutor-8-thread-1-processing-x:url_lookup_core) [   x:url_lookup_core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@58ab3b26[url_lookup_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.3.0):C5)))}
+2016-12-12 01:34:42.092 INFO  (searcherExecutor-8-thread-1-processing-x:url_lookup_core) [   x:url_lookup_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-12-12 01:34:42.092 INFO  (searcherExecutor-8-thread-1-processing-x:url_lookup_core) [   x:url_lookup_core] o.a.s.c.SolrCore [url_lookup_core] Registered new searcher Searcher@58ab3b26[url_lookup_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.3.0):C5)))}
+2016-12-12 01:34:42.093 WARN  (Thread-17) [   x:url_lookup_core] o.a.s.h.d.SimplePropertiesWriter Unable to read: dataimport.properties
+2016-12-12 01:34:42.093 INFO  (Thread-17) [   x:url_lookup_core] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2016-12-12 01:34:42.093 INFO  (Thread-17) [   x:url_lookup_core] o.a.s.h.d.DocBuilder Time taken = 0:0:0.167
+2016-12-12 01:34:42.093 INFO  (Thread-17) [   x:url_lookup_core] o.a.s.u.p.LogUpdateProcessorFactory [url_lookup_core]  webapp=/solr path=/dataimport params={core=url_lookup_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1481506418355&verbose=false} status=0 QTime=5{deleteByQuery=*:* (-1553472140793085952),add=[1 (1553472140824543232), 2 (1553472140858097664), 3 (1553472140858097665), 4 (1553472140859146240), 5 (1553472140859146241)],commit=} 0 181
+2016-12-12 01:34:50.950 INFO  (qtp1528637575-17) [   x:url_lookup_core] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2016-12-12 01:34:50.953 INFO  (qtp1528637575-17) [   x:url_lookup_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-12 01:34:50.953 INFO  (qtp1528637575-17) [   x:url_lookup_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-12 01:34:50.953 INFO  (qtp1528637575-17) [   x:url_lookup_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-12 01:34:50.953 INFO  (qtp1528637575-17) [   x:url_lookup_core] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2016-12-12 01:34:50.954 INFO  (qtp1528637575-17) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={core=url_lookup_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1481506418355&verbose=false} status=0 QTime=4
+2016-12-12 01:34:50.955 INFO  (Thread-18) [   x:url_lookup_core] o.a.s.h.d.DataImporter Starting Full Import
+2016-12-12 01:34:50.960 INFO  (Thread-18) [   x:url_lookup_core] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-12-12 01:34:50.966 INFO  (qtp1528637575-14) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481506418355} status=0 QTime=0
+2016-12-12 01:34:51.029 INFO  (Thread-18) [   x:url_lookup_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@593102bb[url_lookup_core] realtime]
+2016-12-12 01:34:51.032 INFO  (Thread-18) [   x:url_lookup_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity id with URL: jdbc:mysql://localhost:3306/URL_Lookup
+2016-12-12 01:34:51.040 INFO  (Thread-18) [   x:url_lookup_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 7
+2016-12-12 01:34:51.048 INFO  (Thread-18) [   x:url_lookup_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity url_from_text with URL: jdbc:mysql://localhost:3306/URL_Lookup
+2016-12-12 01:34:51.059 INFO  (Thread-18) [   x:url_lookup_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 10
+2016-12-12 01:34:51.066 INFO  (Thread-18) [   x:url_lookup_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity url_to_text with URL: jdbc:mysql://localhost:3306/URL_Lookup
+2016-12-12 01:34:51.073 INFO  (Thread-18) [   x:url_lookup_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 7
+2016-12-12 01:34:51.074 INFO  (Thread-18) [   x:url_lookup_core] o.a.s.h.d.DocBuilder Import completed successfully
+2016-12-12 01:34:51.074 INFO  (Thread-18) [   x:url_lookup_core] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-12-12 01:34:51.074 INFO  (Thread-18) [   x:url_lookup_core] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@6bfb31c0
+2016-12-12 01:34:51.122 INFO  (Thread-18) [   x:url_lookup_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@1697931c[url_lookup_core] main]
+2016-12-12 01:34:51.123 INFO  (Thread-18) [   x:url_lookup_core] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-12-12 01:34:51.123 INFO  (searcherExecutor-8-thread-1-processing-x:url_lookup_core) [   x:url_lookup_core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@1697931c[url_lookup_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(6.3.0):C5)))}
+2016-12-12 01:34:51.123 INFO  (searcherExecutor-8-thread-1-processing-x:url_lookup_core) [   x:url_lookup_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-12-12 01:34:51.123 INFO  (searcherExecutor-8-thread-1-processing-x:url_lookup_core) [   x:url_lookup_core] o.a.s.c.SolrCore [url_lookup_core] Registered new searcher Searcher@1697931c[url_lookup_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(6.3.0):C5)))}
+2016-12-12 01:34:51.125 INFO  (Thread-18) [   x:url_lookup_core] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-12-12 01:34:51.126 INFO  (Thread-18) [   x:url_lookup_core] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2016-12-12 01:34:51.126 INFO  (Thread-18) [   x:url_lookup_core] o.a.s.h.d.DocBuilder Time taken = 0:0:0.166
+2016-12-12 01:34:51.126 INFO  (Thread-18) [   x:url_lookup_core] o.a.s.u.p.LogUpdateProcessorFactory [url_lookup_core]  webapp=/solr path=/dataimport params={core=url_lookup_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1481506418355&verbose=false} status=0 QTime=4{deleteByQuery=*:* (-1553472150264872960),add=[1 (1553472150349807616), 2 (1553472150351904768), 3 (1553472150352953344), 4 (1553472150352953345), 5 (1553472150352953346)],commit=} 0 176
+2016-12-12 01:34:51.796 INFO  (qtp1528637575-19) [   x:url_lookup_core] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2016-12-12 01:34:51.799 INFO  (qtp1528637575-19) [   x:url_lookup_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-12 01:34:51.799 INFO  (qtp1528637575-19) [   x:url_lookup_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-12 01:34:51.799 INFO  (qtp1528637575-19) [   x:url_lookup_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-12 01:34:51.799 INFO  (qtp1528637575-19) [   x:url_lookup_core] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2016-12-12 01:34:51.801 INFO  (Thread-19) [   x:url_lookup_core] o.a.s.h.d.DataImporter Starting Full Import
+2016-12-12 01:34:51.801 INFO  (qtp1528637575-19) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={core=url_lookup_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1481506418355&verbose=false} status=0 QTime=5
+2016-12-12 01:34:51.810 INFO  (Thread-19) [   x:url_lookup_core] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-12-12 01:34:51.816 INFO  (qtp1528637575-13) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481506418355} status=0 QTime=0
+2016-12-12 01:34:51.818 INFO  (Thread-19) [   x:url_lookup_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@191972df[url_lookup_core] realtime]
+2016-12-12 01:34:51.827 INFO  (Thread-19) [   x:url_lookup_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity id with URL: jdbc:mysql://localhost:3306/URL_Lookup
+2016-12-12 01:34:51.836 INFO  (Thread-19) [   x:url_lookup_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 8
+2016-12-12 01:34:51.847 INFO  (Thread-19) [   x:url_lookup_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity url_from_text with URL: jdbc:mysql://localhost:3306/URL_Lookup
+2016-12-12 01:34:51.857 INFO  (Thread-19) [   x:url_lookup_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 9
+2016-12-12 01:34:51.864 INFO  (Thread-19) [   x:url_lookup_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity url_to_text with URL: jdbc:mysql://localhost:3306/URL_Lookup
+2016-12-12 01:34:51.873 INFO  (Thread-19) [   x:url_lookup_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 8
+2016-12-12 01:34:51.874 INFO  (Thread-19) [   x:url_lookup_core] o.a.s.h.d.DocBuilder Import completed successfully
+2016-12-12 01:34:51.874 INFO  (Thread-19) [   x:url_lookup_core] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-12-12 01:34:51.874 INFO  (Thread-19) [   x:url_lookup_core] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@6bfb31c0
+2016-12-12 01:34:51.912 INFO  (Thread-19) [   x:url_lookup_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@5975671e[url_lookup_core] main]
+2016-12-12 01:34:51.912 INFO  (Thread-19) [   x:url_lookup_core] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-12-12 01:34:51.913 INFO  (searcherExecutor-8-thread-1-processing-x:url_lookup_core) [   x:url_lookup_core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@5975671e[url_lookup_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(6.3.0):C5)))}
+2016-12-12 01:34:51.913 INFO  (searcherExecutor-8-thread-1-processing-x:url_lookup_core) [   x:url_lookup_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-12-12 01:34:51.913 INFO  (searcherExecutor-8-thread-1-processing-x:url_lookup_core) [   x:url_lookup_core] o.a.s.c.SolrCore [url_lookup_core] Registered new searcher Searcher@5975671e[url_lookup_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(6.3.0):C5)))}
+2016-12-12 01:34:51.914 INFO  (Thread-19) [   x:url_lookup_core] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-12-12 01:34:51.915 INFO  (Thread-19) [   x:url_lookup_core] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2016-12-12 01:34:51.915 INFO  (Thread-19) [   x:url_lookup_core] o.a.s.h.d.DocBuilder Time taken = 0:0:0.104
+2016-12-12 01:34:51.915 INFO  (Thread-19) [   x:url_lookup_core] o.a.s.u.p.LogUpdateProcessorFactory [url_lookup_core]  webapp=/solr path=/dataimport params={core=url_lookup_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1481506418355&verbose=false} status=0 QTime=5{deleteByQuery=*:* (-1553472151157211136),add=[1 (1553472151184474112), 2 (1553472151187619840), 3 (1553472151188668416), 4 (1553472151188668417), 5 (1553472151189716992)],commit=} 0 119
+2016-12-12 01:34:52.170 INFO  (qtp1528637575-18) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481506418355} status=0 QTime=0
+2016-12-12 01:34:54.305 INFO  (qtp1528637575-21) [   x:url_lookup_core] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2016-12-12 01:34:54.308 INFO  (qtp1528637575-21) [   x:url_lookup_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-12 01:34:54.308 INFO  (qtp1528637575-21) [   x:url_lookup_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-12 01:34:54.308 INFO  (qtp1528637575-21) [   x:url_lookup_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-12 01:34:54.308 INFO  (qtp1528637575-21) [   x:url_lookup_core] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2016-12-12 01:34:54.308 INFO  (qtp1528637575-21) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={core=url_lookup_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1481506418355&verbose=false} status=0 QTime=5
+2016-12-12 01:34:54.309 INFO  (Thread-20) [   x:url_lookup_core] o.a.s.h.d.DataImporter Starting Full Import
+2016-12-12 01:34:54.318 INFO  (qtp1528637575-20) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481506418355} status=0 QTime=0
+2016-12-12 01:34:54.319 INFO  (Thread-20) [   x:url_lookup_core] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-12-12 01:34:54.323 INFO  (Thread-20) [   x:url_lookup_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@1c7be577[url_lookup_core] realtime]
+2016-12-12 01:34:54.331 INFO  (Thread-20) [   x:url_lookup_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity id with URL: jdbc:mysql://localhost:3306/URL_Lookup
+2016-12-12 01:34:54.343 INFO  (Thread-20) [   x:url_lookup_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 11
+2016-12-12 01:34:54.358 INFO  (Thread-20) [   x:url_lookup_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity url_from_text with URL: jdbc:mysql://localhost:3306/URL_Lookup
+2016-12-12 01:34:54.363 INFO  (Thread-20) [   x:url_lookup_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 5
+2016-12-12 01:34:54.368 INFO  (Thread-20) [   x:url_lookup_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity url_to_text with URL: jdbc:mysql://localhost:3306/URL_Lookup
+2016-12-12 01:34:54.374 INFO  (Thread-20) [   x:url_lookup_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 6
+2016-12-12 01:34:54.375 INFO  (Thread-20) [   x:url_lookup_core] o.a.s.h.d.DocBuilder Import completed successfully
+2016-12-12 01:34:54.375 INFO  (Thread-20) [   x:url_lookup_core] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-12-12 01:34:54.375 INFO  (Thread-20) [   x:url_lookup_core] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@6bfb31c0
+2016-12-12 01:34:54.426 INFO  (Thread-20) [   x:url_lookup_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@5be85051[url_lookup_core] main]
+2016-12-12 01:34:54.428 INFO  (Thread-20) [   x:url_lookup_core] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-12-12 01:34:54.428 INFO  (searcherExecutor-8-thread-1-processing-x:url_lookup_core) [   x:url_lookup_core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@5be85051[url_lookup_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_3(6.3.0):C5)))}
+2016-12-12 01:34:54.428 INFO  (searcherExecutor-8-thread-1-processing-x:url_lookup_core) [   x:url_lookup_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-12-12 01:34:54.428 INFO  (searcherExecutor-8-thread-1-processing-x:url_lookup_core) [   x:url_lookup_core] o.a.s.c.SolrCore [url_lookup_core] Registered new searcher Searcher@5be85051[url_lookup_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_3(6.3.0):C5)))}
+2016-12-12 01:34:54.430 INFO  (Thread-20) [   x:url_lookup_core] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-12-12 01:34:54.431 INFO  (Thread-20) [   x:url_lookup_core] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2016-12-12 01:34:54.431 INFO  (Thread-20) [   x:url_lookup_core] o.a.s.h.d.DocBuilder Time taken = 0:0:0.112
+2016-12-12 01:34:54.431 INFO  (Thread-20) [   x:url_lookup_core] o.a.s.u.p.LogUpdateProcessorFactory [url_lookup_core]  webapp=/solr path=/dataimport params={core=url_lookup_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1481506418355&verbose=false} status=0 QTime=5{deleteByQuery=*:* (-1553472153788088320),add=[1 (1553472153813254144), 2 (1553472153815351296), 3 (1553472153815351297), 4 (1553472153816399872), 5 (1553472153816399873)],commit=} 0 128
+2016-12-12 01:35:01.938 INFO  (qtp1528637575-12) [   x:url_lookup_core] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2016-12-12 01:35:01.940 INFO  (qtp1528637575-12) [   x:url_lookup_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-12 01:35:01.940 INFO  (qtp1528637575-12) [   x:url_lookup_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-12 01:35:01.940 INFO  (qtp1528637575-12) [   x:url_lookup_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-12 01:35:01.940 INFO  (qtp1528637575-12) [   x:url_lookup_core] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2016-12-12 01:35:01.940 INFO  (Thread-21) [   x:url_lookup_core] o.a.s.h.d.DataImporter Starting Full Import
+2016-12-12 01:35:01.941 INFO  (qtp1528637575-12) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={command=full-import} status=0 QTime=2
+2016-12-12 01:35:01.946 INFO  (Thread-21) [   x:url_lookup_core] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-12-12 01:35:01.948 INFO  (Thread-21) [   x:url_lookup_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@8c9c0ab[url_lookup_core] realtime]
+2016-12-12 01:35:01.953 INFO  (Thread-21) [   x:url_lookup_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity id with URL: jdbc:mysql://localhost:3306/URL_Lookup
+2016-12-12 01:35:01.959 INFO  (Thread-21) [   x:url_lookup_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 5
+2016-12-12 01:35:01.966 INFO  (Thread-21) [   x:url_lookup_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity url_from_text with URL: jdbc:mysql://localhost:3306/URL_Lookup
+2016-12-12 01:35:01.977 INFO  (Thread-21) [   x:url_lookup_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 10
+2016-12-12 01:35:01.989 INFO  (Thread-21) [   x:url_lookup_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity url_to_text with URL: jdbc:mysql://localhost:3306/URL_Lookup
+2016-12-12 01:35:01.999 INFO  (Thread-21) [   x:url_lookup_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 8
+2016-12-12 01:35:02.000 INFO  (Thread-21) [   x:url_lookup_core] o.a.s.h.d.DocBuilder Import completed successfully
+2016-12-12 01:35:02.000 INFO  (Thread-21) [   x:url_lookup_core] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-12-12 01:35:02.000 INFO  (Thread-21) [   x:url_lookup_core] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@6bfb31c0
+2016-12-12 01:35:02.034 INFO  (Thread-21) [   x:url_lookup_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@642a6e08[url_lookup_core] main]
+2016-12-12 01:35:02.035 INFO  (searcherExecutor-8-thread-1-processing-x:url_lookup_core) [   x:url_lookup_core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@642a6e08[url_lookup_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_4(6.3.0):C5)))}
+2016-12-12 01:35:02.035 INFO  (searcherExecutor-8-thread-1-processing-x:url_lookup_core) [   x:url_lookup_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-12-12 01:35:02.036 INFO  (searcherExecutor-8-thread-1-processing-x:url_lookup_core) [   x:url_lookup_core] o.a.s.c.SolrCore [url_lookup_core] Registered new searcher Searcher@642a6e08[url_lookup_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_4(6.3.0):C5)))}
+2016-12-12 01:35:02.037 INFO  (Thread-21) [   x:url_lookup_core] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-12-12 01:35:02.040 INFO  (Thread-21) [   x:url_lookup_core] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-12-12 01:35:02.042 INFO  (Thread-21) [   x:url_lookup_core] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2016-12-12 01:35:02.043 INFO  (Thread-21) [   x:url_lookup_core] o.a.s.h.d.DocBuilder Time taken = 0:0:0.96
+2016-12-12 01:35:02.044 INFO  (Thread-21) [   x:url_lookup_core] o.a.s.u.p.LogUpdateProcessorFactory [url_lookup_core]  webapp=/solr path=/dataimport params={command=full-import} status=0 QTime=2{deleteByQuery=*:* (-1553472161784528896),add=[1 (1553472161798160384), 2 (1553472161799208960), 3 (1553472161799208961), 4 (1553472161800257536), 5 (1553472161800257537)],commit=} 0 106
+2016-12-12 01:35:42.423 INFO  (qtp1528637575-18) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481506418355} status=0 QTime=2
+2016-12-12 01:35:49.753 INFO  (qtp1528637575-20) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481506418355} status=0 QTime=0
+2016-12-12 01:35:50.320 INFO  (qtp1528637575-20) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481506418355} status=0 QTime=0
+2016-12-12 01:35:50.764 INFO  (qtp1528637575-14) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481506418355} status=0 QTime=0
+2016-12-12 01:35:51.046 INFO  (qtp1528637575-19) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481506418355} status=0 QTime=0
+2016-12-12 01:35:51.360 INFO  (qtp1528637575-13) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481506418355} status=0 QTime=0
+2016-12-12 01:35:51.591 INFO  (qtp1528637575-12) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481506418355} status=0 QTime=0
+2016-12-12 01:35:51.799 INFO  (qtp1528637575-21) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481506418355} status=0 QTime=0
+2016-12-12 01:35:52.072 INFO  (qtp1528637575-18) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481506418355} status=0 QTime=0
+2016-12-12 01:35:55.695 INFO  (qtp1528637575-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481506418259} status=0 QTime=0
+2016-12-12 01:35:55.714 INFO  (qtp1528637575-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481506418260} status=0 QTime=12
+2016-12-12 01:35:57.206 INFO  (qtp1528637575-21) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1481506555639} hits=5 status=0 QTime=16
+2016-12-12 01:36:45.145 INFO  (qtp1528637575-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481506418259} status=0 QTime=0
+2016-12-12 01:36:45.157 INFO  (qtp1528637575-13) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1481506422593} status=0 QTime=2
+2016-12-12 01:36:45.177 INFO  (qtp1528637575-15) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/config params={wt=json&_=1481506605103} status=0 QTime=13
+2016-12-12 01:36:45.205 INFO  (qtp1528637575-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481506418260} status=0 QTime=56
+2016-12-12 01:36:45.241 INFO  (qtp1528637575-20) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1481506422593} status=0 QTime=4
+2016-12-12 01:36:48.735 INFO  (qtp1528637575-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481506418259} status=0 QTime=0
+2016-12-12 01:36:48.745 INFO  (qtp1528637575-12) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1481506422593} status=0 QTime=2
+2016-12-12 01:36:48.748 INFO  (qtp1528637575-15) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/config params={wt=json&_=1481506605103} status=0 QTime=2
+2016-12-12 01:36:48.773 INFO  (qtp1528637575-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481506418260} status=0 QTime=34
+2016-12-12 01:36:48.808 INFO  (qtp1528637575-14) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1481506422593} status=0 QTime=0
+2016-12-12 01:36:52.904 INFO  (qtp1528637575-14) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/admin/luke params={fl=url_from&wt=json&_=1481506422593} status=0 QTime=0
+2016-12-12 01:37:08.506 INFO  (ShutdownMonitor) [   ] o.e.j.s.ServerConnector Stopped ServerConnector@6a8b41af{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2016-12-12 01:37:08.507 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=226744878
+2016-12-12 01:37:08.508 INFO  (coreCloseExecutor-17-thread-2) [   x:url_core] o.a.s.c.SolrCore [url_core]  CLOSING SolrCore org.apache.solr.core.SolrCore@434eda11
+2016-12-12 01:37:08.508 INFO  (coreCloseExecutor-17-thread-1) [   x:url_lookup_core] o.a.s.c.SolrCore [url_lookup_core]  CLOSING SolrCore org.apache.solr.core.SolrCore@12da314e

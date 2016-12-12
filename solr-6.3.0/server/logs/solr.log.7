@@ -1,0 +1,1511 @@
+2016-12-11 03:48:59.259 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.8.v20160314
+2016-12-11 03:48:59.718 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.3.0
+2016-12-11 03:48:59.718 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2016-12-11 03:48:59.718 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/mansk/solr-6.3.0
+2016-12-11 03:48:59.810 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2016-12-11T03:48:59.720Z
+2016-12-11 03:48:59.812 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2016-12-11 03:48:59.833 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/mansk/solr-6.3.0/server/solr
+2016-12-11 03:48:59.840 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/mansk/solr-6.3.0/server/solr/solr.xml
+2016-12-11 03:49:00.286 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2016-12-11 03:49:00.362 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /home/mansk/solr-6.3.0/server/solr
+2016-12-11 03:49:00.374 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [url_core]
+2016-12-11 03:49:00.421 INFO  (main) [   ] o.e.j.s.ServerConnector Started ServerConnector@3a52dba3{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2016-12-11 03:49:00.422 INFO  (main) [   ] o.e.j.s.Server Started @1848ms
+2016-12-11 03:49:00.495 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader [url_core] Added 53 libs to classloader, from paths: [/home/mansk/solr-6.3.0/contrib/clustering/lib, /home/mansk/solr-6.3.0/contrib/dataimporthandler/lib, /home/mansk/solr-6.3.0/contrib/extraction/lib, /home/mansk/solr-6.3.0/contrib/langid/lib, /home/mansk/solr-6.3.0/contrib/velocity/lib, /home/mansk/solr-6.3.0/dist]
+2016-12-11 03:49:00.796 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.3.0
+2016-12-11 03:49:01.098 WARN  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
+2016-12-11 03:49:01.214 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema [url_core] Schema name=example-basic
+2016-12-11 03:49:02.071 INFO  (qtp1528637575-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481428093800} status=0 QTime=56
+2016-12-11 03:49:02.078 INFO  (qtp1528637575-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1481428094003} status=0 QTime=62
+2016-12-11 03:49:02.145 INFO  (qtp1528637575-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481428093801} status=0 QTime=130
+2016-12-11 03:49:02.272 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema Loaded schema example-basic/1.6 with uniqueid field id
+2016-12-11 03:49:02.373 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.CoreContainer Creating SolrCore 'url_core' using configuration from instancedir /home/mansk/solr-6.3.0/server/solr/url_core
+2016-12-11 03:49:02.413 INFO  (coreLoadExecutor-6-thread-1) [   x:url_core] o.a.s.c.SolrCore [[url_core] ] Opening new SolrCore at [/home/mansk/solr-6.3.0/server/solr/url_core], dataDir=[/home/mansk/solr-6.3.0/server/solr/url_core/data/]
+2016-12-11 03:49:02.481 INFO  (coreLoadExecutor-6-thread-1) [   x:url_core] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2016-12-11 03:49:03.019 INFO  (coreLoadExecutor-6-thread-1) [   x:url_core] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2016-12-11 03:49:03.027 INFO  (coreLoadExecutor-6-thread-1) [   x:url_core] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2016-12-11 03:49:03.095 INFO  (coreLoadExecutor-6-thread-1) [   x:url_core] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2016-12-11 03:49:03.098 INFO  (coreLoadExecutor-6-thread-1) [   x:url_core] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2016-12-11 03:49:03.287 INFO  (coreLoadExecutor-6-thread-1) [   x:url_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@9395f78[url_core] main]
+2016-12-11 03:49:03.309 INFO  (coreLoadExecutor-6-thread-1) [   x:url_core] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/mansk/solr-6.3.0/server/solr/url_core/conf
+2016-12-11 03:49:03.354 INFO  (coreLoadExecutor-6-thread-1) [   x:url_core] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2016-12-11 03:49:03.371 INFO  (coreLoadExecutor-6-thread-1) [   x:url_core] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2016-12-11 03:49:03.377 INFO  (coreLoadExecutor-6-thread-1) [   x:url_core] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /home/mansk/solr-6.3.0/server/solr/url_core/conf/elevate.xml
+2016-12-11 03:49:03.432 INFO  (coreLoadExecutor-6-thread-1) [   x:url_core] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2016-12-11 03:49:03.468 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@9395f78[url_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_18(6.3.0):C4)))}
+2016-12-11 03:49:03.468 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-12-11 03:49:03.468 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2016-12-11 03:49:03.469 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.SolrCore [url_core] Registered new searcher Searcher@9395f78[url_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_18(6.3.0):C4)))}
+2016-12-11 03:49:06.473 INFO  (qtp1528637575-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481428093800} status=0 QTime=0
+2016-12-11 03:49:06.487 INFO  (qtp1528637575-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481428093801} status=0 QTime=12
+2016-12-11 03:49:06.495 INFO  (qtp1528637575-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1481428094003&since=0} status=0 QTime=1
+2016-12-11 03:49:06.783 INFO  (qtp1528637575-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481428093800} status=0 QTime=0
+2016-12-11 03:49:07.716 INFO  (qtp1528637575-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481428147490} status=0 QTime=0
+2016-12-11 03:49:07.720 INFO  (qtp1528637575-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1481428147706&since=0} status=0 QTime=0
+2016-12-11 03:49:07.743 INFO  (qtp1528637575-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481428147491} status=0 QTime=25
+2016-12-11 03:49:10.882 INFO  (qtp1528637575-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481428147490} status=0 QTime=0
+2016-12-11 03:49:10.920 INFO  (qtp1528637575-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481428147491} status=0 QTime=25
+2016-12-11 03:49:10.920 INFO  (qtp1528637575-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481428147491} status=0 QTime=33
+2016-12-11 03:49:12.380 INFO  (qtp1528637575-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481428147490} status=0 QTime=0
+2016-12-11 03:49:12.402 INFO  (qtp1528637575-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481428147491} status=0 QTime=17
+2016-12-11 03:49:12.414 INFO  (qtp1528637575-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1481428147490} status=0 QTime=4
+2016-12-11 03:49:12.570 INFO  (qtp1528637575-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481428147490} status=0 QTime=0
+2016-12-11 03:49:12.574 INFO  (qtp1528637575-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1481428147490} status=0 QTime=1
+2016-12-11 03:49:12.587 INFO  (qtp1528637575-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481428147491} status=0 QTime=16
+2016-12-11 03:49:12.821 INFO  (qtp1528637575-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481428147490} status=0 QTime=0
+2016-12-11 03:49:12.824 INFO  (qtp1528637575-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1481428147706&since=0} status=0 QTime=0
+2016-12-11 03:49:12.841 INFO  (qtp1528637575-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481428147491} status=0 QTime=14
+2016-12-11 03:49:15.584 INFO  (qtp1528637575-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481428147490} status=0 QTime=0
+2016-12-11 03:49:15.598 INFO  (qtp1528637575-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481428147491} status=0 QTime=11
+2016-12-11 03:49:15.609 INFO  (qtp1528637575-17) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1481428155569} status=0 QTime=5
+2016-12-11 03:49:15.614 INFO  (qtp1528637575-15) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/replication params={wt=json&command=details&_=1481428155569} status=0 QTime=10
+2016-12-11 03:49:15.612 INFO  (qtp1528637575-12) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1481428147491&ts=1481428147491} status=503 QTime=7
+2016-12-11 03:49:15.635 INFO  (qtp1528637575-21) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/admin/system params={wt=json&_=1481428155569} status=0 QTime=31
+2016-12-11 03:49:17.951 INFO  (qtp1528637575-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481428147490} status=0 QTime=0
+2016-12-11 03:49:17.966 INFO  (qtp1528637575-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481428147491} status=0 QTime=14
+2016-12-11 03:49:20.193 INFO  (qtp1528637575-17) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1481428157862} hits=4 status=0 QTime=29
+2016-12-11 03:49:39.232 INFO  (qtp1528637575-21) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1481428157862} hits=4 status=0 QTime=0
+2016-12-11 03:49:55.949 INFO  (qtp1528637575-17) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=ahmed&indent=on&wt=json&_=1481428157862} hits=0 status=0 QTime=16
+2016-12-11 03:50:04.778 INFO  (qtp1528637575-20) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=url:ahmed&indent=on&wt=json&_=1481428157862} hits=0 status=0 QTime=1
+2016-12-11 03:50:07.708 INFO  (qtp1528637575-15) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=url:ahmed&indent=on&wt=json&_=1481428157862} hits=0 status=0 QTime=0
+2016-12-11 03:50:07.987 INFO  (qtp1528637575-17) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=url:ahmed&indent=on&wt=json&_=1481428157862} hits=0 status=0 QTime=1
+2016-12-11 03:50:08.182 INFO  (qtp1528637575-12) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=url:ahmed&indent=on&wt=json&_=1481428157862} hits=0 status=0 QTime=1
+2016-12-11 03:50:21.742 INFO  (qtp1528637575-14) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1481428157862} hits=4 status=0 QTime=0
+2016-12-11 03:50:28.331 INFO  (qtp1528637575-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481428147490} status=0 QTime=0
+2016-12-11 03:50:28.339 INFO  (qtp1528637575-14) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1481428228285} status=0 QTime=3
+2016-12-11 03:50:28.355 INFO  (qtp1528637575-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481428147491} status=0 QTime=19
+2016-12-11 03:50:28.500 INFO  (qtp1528637575-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481428147490} status=0 QTime=0
+2016-12-11 03:50:28.508 INFO  (qtp1528637575-13) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1481428228285} status=0 QTime=0
+2016-12-11 03:50:28.516 INFO  (qtp1528637575-20) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1481428228287} status=0 QTime=6
+2016-12-11 03:50:28.518 INFO  (qtp1528637575-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481428147491} status=0 QTime=17
+2016-12-11 03:50:28.599 INFO  (qtp1528637575-18) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481428228287} status=0 QTime=0
+2016-12-11 03:50:33.492 INFO  (qtp1528637575-14) [   x:url_core] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2016-12-11 03:50:33.503 INFO  (qtp1528637575-14) [   x:url_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-11 03:50:33.503 INFO  (qtp1528637575-14) [   x:url_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-11 03:50:33.503 INFO  (qtp1528637575-14) [   x:url_core] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2016-12-11 03:50:33.513 INFO  (Thread-14) [   x:url_core] o.a.s.h.d.DataImporter Starting Full Import
+2016-12-11 03:50:33.513 INFO  (qtp1528637575-14) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={core=url_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&entity=id&_=1481428228287&verbose=false} status=0 QTime=23
+2016-12-11 03:50:33.520 INFO  (qtp1528637575-20) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481428228287} status=0 QTime=0
+2016-12-11 03:50:33.533 INFO  (Thread-14) [   x:url_core] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-12-11 03:50:33.631 INFO  (Thread-14) [   x:url_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@594152fb[url_core] realtime]
+2016-12-11 03:50:33.662 INFO  (Thread-14) [   x:url_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity id with URL: jdbc:mysql://localhost:3306/mansk
+2016-12-11 03:50:33.934 INFO  (Thread-14) [   x:url_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 271
+2016-12-11 03:50:33.981 INFO  (Thread-14) [   x:url_core] o.a.s.h.d.DocBuilder Import completed successfully
+2016-12-11 03:50:33.982 INFO  (Thread-14) [   x:url_core] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-12-11 03:50:33.982 INFO  (Thread-14) [   x:url_core] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@6e41c7e
+2016-12-11 03:50:34.067 INFO  (Thread-14) [   x:url_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@1a507676[url_core] main]
+2016-12-11 03:50:34.072 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@1a507676[url_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_19(6.3.0):C4)))}
+2016-12-11 03:50:34.072 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-12-11 03:50:34.073 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.SolrCore [url_core] Registered new searcher Searcher@1a507676[url_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_19(6.3.0):C4)))}
+2016-12-11 03:50:34.073 INFO  (qtp1528637575-20) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481428228287} status=0 QTime=6
+2016-12-11 03:50:34.084 INFO  (Thread-14) [   x:url_core] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-12-11 03:50:34.085 INFO  (Thread-14) [   x:url_core] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-12-11 03:50:34.086 ERROR (Thread-14) [   x:url_core] o.a.s.h.d.DocBuilder Could not write property file
+org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to persist Index Start Time Processing Document # 5
+	at org.apache.solr.handler.dataimport.SimplePropertiesWriter.persist(SimplePropertiesWriter.java:219)
+	at org.apache.solr.handler.dataimport.DocBuilder.finish(DocBuilder.java:307)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:253)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.FileNotFoundException: /home/mansk/solr-6.3.0/server/solr/url_core/conf/dataimport.properties (Permission denied)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.apache.solr.handler.dataimport.SimplePropertiesWriter.persist(SimplePropertiesWriter.java:215)
+	... 6 more
+2016-12-11 03:50:34.087 INFO  (Thread-14) [   x:url_core] o.a.s.h.d.DocBuilder Time taken = 0:0:0.553
+2016-12-11 03:50:34.087 INFO  (Thread-14) [   x:url_core] o.a.s.u.p.LogUpdateProcessorFactory [url_core]  webapp=/solr path=/dataimport params={core=url_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&entity=id&_=1481428228287&verbose=false} status=0 QTime=23{deleteByQuery=*:* (-1553390091456479232),add=[1 (1553390091841306624), 2 (1553390091871715328), 3 (1553390091872763904), 4 (1553390091873812480)],commit=} 0 596
+2016-12-11 03:50:36.125 INFO  (qtp1528637575-17) [   x:url_core] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2016-12-11 03:50:36.129 INFO  (qtp1528637575-17) [   x:url_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-11 03:50:36.132 INFO  (qtp1528637575-17) [   x:url_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-11 03:50:36.132 INFO  (qtp1528637575-17) [   x:url_core] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2016-12-11 03:50:36.132 INFO  (qtp1528637575-17) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=reload-config&_=1481428228287} status=0 QTime=6
+2016-12-11 03:50:36.177 INFO  (qtp1528637575-18) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1481428228285} status=0 QTime=0
+2016-12-11 03:50:36.179 INFO  (qtp1528637575-12) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1481428228287} status=0 QTime=0
+2016-12-11 03:50:36.209 INFO  (qtp1528637575-13) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481428228287} status=0 QTime=0
+2016-12-11 03:50:38.925 INFO  (qtp1528637575-20) [   x:url_core] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2016-12-11 03:50:38.928 INFO  (qtp1528637575-20) [   x:url_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-11 03:50:38.928 INFO  (qtp1528637575-20) [   x:url_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-11 03:50:38.929 INFO  (qtp1528637575-20) [   x:url_core] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2016-12-11 03:50:38.929 INFO  (qtp1528637575-20) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={core=url_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&entity=urltext&_=1481428228287&verbose=false} status=0 QTime=4
+2016-12-11 03:50:38.930 INFO  (Thread-16) [   x:url_core] o.a.s.h.d.DataImporter Starting Full Import
+2016-12-11 03:50:38.935 INFO  (qtp1528637575-15) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481428228287} status=0 QTime=0
+2016-12-11 03:50:38.935 INFO  (Thread-16) [   x:url_core] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-12-11 03:50:38.945 INFO  (Thread-16) [   x:url_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@69790794[url_core] realtime]
+2016-12-11 03:50:38.950 INFO  (Thread-16) [   x:url_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity urltext with URL: jdbc:mysql://localhost:3306/mansk
+2016-12-11 03:50:38.981 INFO  (Thread-16) [   x:url_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 30
+2016-12-11 03:50:38.983 WARN  (Thread-16) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=/Women])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:50:38.983 WARN  (Thread-16) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=/Women/Shoes/])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:50:38.984 WARN  (Thread-16) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=/Boat/Shoes])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:50:38.984 WARN  (Thread-16) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=mansy])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:50:38.985 INFO  (Thread-16) [   x:url_core] o.a.s.h.d.DocBuilder Import completed successfully
+2016-12-11 03:50:38.985 INFO  (Thread-16) [   x:url_core] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-12-11 03:50:38.985 INFO  (Thread-16) [   x:url_core] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@6e41c7e
+2016-12-11 03:50:38.993 INFO  (Thread-16) [   x:url_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@5ec8d4e[url_core] main]
+2016-12-11 03:50:39.001 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@5ec8d4e[url_core] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2016-12-11 03:50:39.001 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-12-11 03:50:39.001 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.SolrCore [url_core] Registered new searcher Searcher@5ec8d4e[url_core] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2016-12-11 03:50:39.011 INFO  (Thread-16) [   x:url_core] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-12-11 03:50:39.012 INFO  (Thread-16) [   x:url_core] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-12-11 03:50:39.012 ERROR (Thread-16) [   x:url_core] o.a.s.h.d.DocBuilder Could not write property file
+org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to persist Index Start Time Processing Document # 1
+	at org.apache.solr.handler.dataimport.SimplePropertiesWriter.persist(SimplePropertiesWriter.java:219)
+	at org.apache.solr.handler.dataimport.DocBuilder.finish(DocBuilder.java:307)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:253)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.FileNotFoundException: /home/mansk/solr-6.3.0/server/solr/url_core/conf/dataimport.properties (Permission denied)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.apache.solr.handler.dataimport.SimplePropertiesWriter.persist(SimplePropertiesWriter.java:215)
+	... 6 more
+2016-12-11 03:50:39.013 INFO  (Thread-16) [   x:url_core] o.a.s.h.d.DocBuilder Time taken = 0:0:0.72
+2016-12-11 03:50:39.013 INFO  (Thread-16) [   x:url_core] o.a.s.u.p.LogUpdateProcessorFactory [url_core]  webapp=/solr path=/dataimport params={core=url_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&entity=urltext&_=1481428228287&verbose=false} status=0 QTime=4{deleteByQuery=*:* (-1553390097075798016),commit=} 0 88
+2016-12-11 03:50:39.499 INFO  (qtp1528637575-15) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481428228287} status=0 QTime=0
+2016-12-11 03:50:40.890 INFO  (qtp1528637575-17) [   x:url_core] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2016-12-11 03:50:40.894 INFO  (qtp1528637575-17) [   x:url_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-11 03:50:40.894 INFO  (qtp1528637575-17) [   x:url_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-11 03:50:40.894 INFO  (qtp1528637575-17) [   x:url_core] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2016-12-11 03:50:40.895 INFO  (qtp1528637575-17) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=reload-config&_=1481428228287} status=0 QTime=5
+2016-12-11 03:50:40.918 INFO  (qtp1528637575-18) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1481428228285} status=0 QTime=1
+2016-12-11 03:50:40.920 INFO  (qtp1528637575-21) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1481428228287} status=0 QTime=0
+2016-12-11 03:50:40.941 INFO  (qtp1528637575-12) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481428228287} status=0 QTime=0
+2016-12-11 03:50:42.252 INFO  (qtp1528637575-19) [   x:url_core] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2016-12-11 03:50:42.254 INFO  (qtp1528637575-19) [   x:url_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-11 03:50:42.254 INFO  (qtp1528637575-19) [   x:url_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-11 03:50:42.254 INFO  (qtp1528637575-19) [   x:url_core] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2016-12-11 03:50:42.255 INFO  (qtp1528637575-19) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={core=url_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&entity=urltext&_=1481428228287&verbose=false} status=0 QTime=3
+2016-12-11 03:50:42.256 INFO  (Thread-17) [   x:url_core] o.a.s.h.d.DataImporter Starting Full Import
+2016-12-11 03:50:42.260 INFO  (Thread-17) [   x:url_core] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-12-11 03:50:42.266 INFO  (Thread-17) [   x:url_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity urltext with URL: jdbc:mysql://localhost:3306/mansk
+2016-12-11 03:50:42.272 INFO  (qtp1528637575-20) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481428228287} status=0 QTime=0
+2016-12-11 03:50:42.276 INFO  (Thread-17) [   x:url_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 10
+2016-12-11 03:50:42.277 WARN  (Thread-17) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=/Women])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:50:42.280 WARN  (Thread-17) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=/Women/Shoes/])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:50:42.281 WARN  (Thread-17) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=/Boat/Shoes])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:50:42.282 WARN  (Thread-17) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=mansy])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:50:42.283 INFO  (Thread-17) [   x:url_core] o.a.s.h.d.DocBuilder Import completed successfully
+2016-12-11 03:50:42.283 INFO  (Thread-17) [   x:url_core] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-12-11 03:50:42.283 INFO  (Thread-17) [   x:url_core] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
+2016-12-11 03:50:42.287 INFO  (Thread-17) [   x:url_core] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-12-11 03:50:42.288 INFO  (Thread-17) [   x:url_core] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-12-11 03:50:42.288 ERROR (Thread-17) [   x:url_core] o.a.s.h.d.DocBuilder Could not write property file
+org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to persist Index Start Time Processing Document # 1
+	at org.apache.solr.handler.dataimport.SimplePropertiesWriter.persist(SimplePropertiesWriter.java:219)
+	at org.apache.solr.handler.dataimport.DocBuilder.finish(DocBuilder.java:307)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:253)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.FileNotFoundException: /home/mansk/solr-6.3.0/server/solr/url_core/conf/dataimport.properties (Permission denied)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.apache.solr.handler.dataimport.SimplePropertiesWriter.persist(SimplePropertiesWriter.java:215)
+	... 6 more
+2016-12-11 03:50:42.288 INFO  (Thread-17) [   x:url_core] o.a.s.h.d.DocBuilder Time taken = 0:0:0.28
+2016-12-11 03:50:42.288 INFO  (Thread-17) [   x:url_core] o.a.s.u.p.LogUpdateProcessorFactory [url_core]  webapp=/solr path=/dataimport params={core=url_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&entity=urltext&_=1481428228287&verbose=false} status=0 QTime=3{deleteByQuery=*:* (-1553390100556021760),commit=} 0 36
+2016-12-11 03:50:42.668 INFO  (qtp1528637575-14) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481428228287} status=0 QTime=0
+2016-12-11 03:50:44.609 INFO  (qtp1528637575-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481428147490} status=0 QTime=0
+2016-12-11 03:50:44.621 INFO  (qtp1528637575-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481428147491} status=0 QTime=11
+2016-12-11 03:50:46.610 INFO  (qtp1528637575-17) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1481428157862} hits=0 status=0 QTime=1
+2016-12-11 03:50:47.985 INFO  (qtp1528637575-19) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1481428157862} hits=0 status=0 QTime=0
+2016-12-11 03:50:50.375 INFO  (qtp1528637575-15) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1481428157862} hits=0 status=0 QTime=0
+2016-12-11 03:50:50.689 INFO  (qtp1528637575-12) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1481428157862} hits=0 status=0 QTime=0
+2016-12-11 03:50:56.136 INFO  (qtp1528637575-13) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1481428157862} hits=0 status=0 QTime=0
+2016-12-11 03:50:57.602 INFO  (qtp1528637575-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481428147490} status=0 QTime=0
+2016-12-11 03:50:57.610 INFO  (qtp1528637575-17) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1481428228285} status=0 QTime=0
+2016-12-11 03:50:57.616 INFO  (qtp1528637575-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481428147491} status=0 QTime=11
+2016-12-11 03:50:57.753 INFO  (qtp1528637575-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481428147490} status=0 QTime=0
+2016-12-11 03:50:57.756 INFO  (qtp1528637575-19) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1481428228285} status=0 QTime=0
+2016-12-11 03:50:57.758 INFO  (qtp1528637575-12) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1481428228287} status=0 QTime=0
+2016-12-11 03:50:57.771 INFO  (qtp1528637575-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481428147491} status=0 QTime=15
+2016-12-11 03:50:57.882 INFO  (qtp1528637575-19) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481428228287} status=0 QTime=0
+2016-12-11 03:51:04.808 INFO  (qtp1528637575-14) [   x:url_core] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2016-12-11 03:51:04.811 INFO  (qtp1528637575-14) [   x:url_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-11 03:51:04.812 INFO  (qtp1528637575-14) [   x:url_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-11 03:51:04.812 INFO  (qtp1528637575-14) [   x:url_core] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2016-12-11 03:51:04.814 INFO  (Thread-18) [   x:url_core] o.a.s.h.d.DataImporter Starting Full Import
+2016-12-11 03:51:04.814 INFO  (qtp1528637575-14) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={core=url_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1481428228287&verbose=false} status=0 QTime=6
+2016-12-11 03:51:04.818 INFO  (Thread-18) [   x:url_core] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-12-11 03:51:04.824 INFO  (Thread-18) [   x:url_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity id with URL: jdbc:mysql://localhost:3306/mansk
+2016-12-11 03:51:04.835 INFO  (Thread-18) [   x:url_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 10
+2016-12-11 03:51:04.841 INFO  (qtp1528637575-20) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481428228287} status=0 QTime=0
+2016-12-11 03:51:04.853 INFO  (Thread-18) [   x:url_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity urltext with URL: jdbc:mysql://localhost:3306/mansk
+2016-12-11 03:51:04.863 INFO  (Thread-18) [   x:url_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 9
+2016-12-11 03:51:04.864 WARN  (Thread-18) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=/Women])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:51:04.865 WARN  (Thread-18) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=/Women/Shoes/])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:51:04.865 WARN  (Thread-18) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=/Boat/Shoes])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:51:04.866 WARN  (Thread-18) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=mansy])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:51:04.866 INFO  (Thread-18) [   x:url_core] o.a.s.h.d.DocBuilder Import completed successfully
+2016-12-11 03:51:04.866 INFO  (Thread-18) [   x:url_core] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-12-11 03:51:04.866 INFO  (Thread-18) [   x:url_core] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@6e41c7e
+2016-12-11 03:51:04.914 INFO  (Thread-18) [   x:url_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@58418a0f[url_core] main]
+2016-12-11 03:51:04.915 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@58418a0f[url_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1a(6.3.0):C4)))}
+2016-12-11 03:51:04.919 INFO  (Thread-18) [   x:url_core] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-12-11 03:51:04.919 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-12-11 03:51:04.920 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.SolrCore [url_core] Registered new searcher Searcher@58418a0f[url_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1a(6.3.0):C4)))}
+2016-12-11 03:51:04.920 INFO  (Thread-18) [   x:url_core] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-12-11 03:51:04.920 ERROR (Thread-18) [   x:url_core] o.a.s.h.d.DocBuilder Could not write property file
+org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to persist Index Start Time Processing Document # 5
+	at org.apache.solr.handler.dataimport.SimplePropertiesWriter.persist(SimplePropertiesWriter.java:219)
+	at org.apache.solr.handler.dataimport.DocBuilder.finish(DocBuilder.java:307)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:253)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.FileNotFoundException: /home/mansk/solr-6.3.0/server/solr/url_core/conf/dataimport.properties (Permission denied)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.apache.solr.handler.dataimport.SimplePropertiesWriter.persist(SimplePropertiesWriter.java:215)
+	... 6 more
+2016-12-11 03:51:04.921 INFO  (Thread-18) [   x:url_core] o.a.s.h.d.DocBuilder Time taken = 0:0:0.102
+2016-12-11 03:51:04.922 INFO  (Thread-18) [   x:url_core] o.a.s.u.p.LogUpdateProcessorFactory [url_core]  webapp=/solr path=/dataimport params={core=url_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1481428228287&verbose=false} status=0 QTime=6{deleteByQuery=*:* (-1553390124210847744),add=[1 (1553390124229722112), 2 (1553390124237062144), 3 (1553390124238110720), 4 (1553390124239159296)],commit=} 0 114
+2016-12-11 03:51:05.565 INFO  (qtp1528637575-21) [   x:url_core] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2016-12-11 03:51:05.567 INFO  (qtp1528637575-21) [   x:url_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-11 03:51:05.567 INFO  (qtp1528637575-21) [   x:url_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-11 03:51:05.567 INFO  (qtp1528637575-21) [   x:url_core] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2016-12-11 03:51:05.568 INFO  (Thread-19) [   x:url_core] o.a.s.h.d.DataImporter Starting Full Import
+2016-12-11 03:51:05.568 INFO  (qtp1528637575-21) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={core=url_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1481428228287&verbose=false} status=0 QTime=3
+2016-12-11 03:51:05.574 INFO  (Thread-19) [   x:url_core] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-12-11 03:51:05.587 INFO  (Thread-19) [   x:url_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@7226a195[url_core] realtime]
+2016-12-11 03:51:05.591 INFO  (qtp1528637575-17) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481428228287} status=0 QTime=6
+2016-12-11 03:51:05.594 INFO  (Thread-19) [   x:url_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity id with URL: jdbc:mysql://localhost:3306/mansk
+2016-12-11 03:51:05.608 INFO  (Thread-19) [   x:url_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 13
+2016-12-11 03:51:05.622 INFO  (Thread-19) [   x:url_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity urltext with URL: jdbc:mysql://localhost:3306/mansk
+2016-12-11 03:51:05.632 INFO  (Thread-19) [   x:url_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 9
+2016-12-11 03:51:05.633 WARN  (Thread-19) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=/Women])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:51:05.633 WARN  (Thread-19) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=/Women/Shoes/])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:51:05.634 WARN  (Thread-19) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=/Boat/Shoes])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:51:05.635 WARN  (Thread-19) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=mansy])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:51:05.635 INFO  (Thread-19) [   x:url_core] o.a.s.h.d.DocBuilder Import completed successfully
+2016-12-11 03:51:05.635 INFO  (Thread-19) [   x:url_core] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-12-11 03:51:05.636 INFO  (Thread-19) [   x:url_core] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@6e41c7e
+2016-12-11 03:51:05.685 INFO  (Thread-19) [   x:url_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@4092838c[url_core] main]
+2016-12-11 03:51:05.686 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@4092838c[url_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1b(6.3.0):C4)))}
+2016-12-11 03:51:05.686 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-12-11 03:51:05.686 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.SolrCore [url_core] Registered new searcher Searcher@4092838c[url_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1b(6.3.0):C4)))}
+2016-12-11 03:51:05.687 INFO  (Thread-19) [   x:url_core] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-12-11 03:51:05.688 INFO  (Thread-19) [   x:url_core] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-12-11 03:51:05.688 ERROR (Thread-19) [   x:url_core] o.a.s.h.d.DocBuilder Could not write property file
+org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to persist Index Start Time Processing Document # 5
+	at org.apache.solr.handler.dataimport.SimplePropertiesWriter.persist(SimplePropertiesWriter.java:219)
+	at org.apache.solr.handler.dataimport.DocBuilder.finish(DocBuilder.java:307)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:253)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.FileNotFoundException: /home/mansk/solr-6.3.0/server/solr/url_core/conf/dataimport.properties (Permission denied)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.apache.solr.handler.dataimport.SimplePropertiesWriter.persist(SimplePropertiesWriter.java:215)
+	... 6 more
+2016-12-11 03:51:05.690 INFO  (Thread-19) [   x:url_core] o.a.s.h.d.DocBuilder Time taken = 0:0:0.114
+2016-12-11 03:51:05.690 INFO  (Thread-19) [   x:url_core] o.a.s.u.p.LogUpdateProcessorFactory [url_core]  webapp=/solr path=/dataimport params={core=url_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1481428228287&verbose=false} status=0 QTime=3{deleteByQuery=*:* (-1553390125003571200),add=[1 (1553390125040271360), 2 (1553390125042368512), 3 (1553390125044465664), 4 (1553390125045514240)],commit=} 0 125
+2016-12-11 03:51:06.241 INFO  (qtp1528637575-18) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481428228287} status=0 QTime=0
+2016-12-11 03:51:07.303 INFO  (qtp1528637575-12) [   x:url_core] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2016-12-11 03:51:07.306 INFO  (qtp1528637575-12) [   x:url_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-11 03:51:07.306 INFO  (qtp1528637575-12) [   x:url_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-11 03:51:07.306 INFO  (qtp1528637575-12) [   x:url_core] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2016-12-11 03:51:07.311 INFO  (Thread-20) [   x:url_core] o.a.s.h.d.DataImporter Starting Full Import
+2016-12-11 03:51:07.311 INFO  (qtp1528637575-12) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={core=url_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1481428228287&verbose=false} status=0 QTime=8
+2016-12-11 03:51:07.318 INFO  (Thread-20) [   x:url_core] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-12-11 03:51:07.327 INFO  (qtp1528637575-15) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481428228287} status=0 QTime=3
+2016-12-11 03:51:07.329 INFO  (Thread-20) [   x:url_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@1126a5c0[url_core] realtime]
+2016-12-11 03:51:07.333 INFO  (Thread-20) [   x:url_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity id with URL: jdbc:mysql://localhost:3306/mansk
+2016-12-11 03:51:07.354 INFO  (Thread-20) [   x:url_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 20
+2016-12-11 03:51:07.369 INFO  (Thread-20) [   x:url_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity urltext with URL: jdbc:mysql://localhost:3306/mansk
+2016-12-11 03:51:07.378 INFO  (Thread-20) [   x:url_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 8
+2016-12-11 03:51:07.379 WARN  (Thread-20) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=/Women])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:51:07.379 WARN  (Thread-20) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=/Women/Shoes/])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:51:07.380 WARN  (Thread-20) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=/Boat/Shoes])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:51:07.380 WARN  (Thread-20) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=mansy])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:51:07.381 INFO  (Thread-20) [   x:url_core] o.a.s.h.d.DocBuilder Import completed successfully
+2016-12-11 03:51:07.382 INFO  (Thread-20) [   x:url_core] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-12-11 03:51:07.382 INFO  (Thread-20) [   x:url_core] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@6e41c7e
+2016-12-11 03:51:07.446 INFO  (Thread-20) [   x:url_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@2246d273[url_core] main]
+2016-12-11 03:51:07.481 INFO  (Thread-20) [   x:url_core] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-12-11 03:51:07.481 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@2246d273[url_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1c(6.3.0):C4)))}
+2016-12-11 03:51:07.482 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-12-11 03:51:07.482 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.SolrCore [url_core] Registered new searcher Searcher@2246d273[url_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1c(6.3.0):C4)))}
+2016-12-11 03:51:07.485 INFO  (Thread-20) [   x:url_core] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-12-11 03:51:07.486 ERROR (Thread-20) [   x:url_core] o.a.s.h.d.DocBuilder Could not write property file
+org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to persist Index Start Time Processing Document # 5
+	at org.apache.solr.handler.dataimport.SimplePropertiesWriter.persist(SimplePropertiesWriter.java:219)
+	at org.apache.solr.handler.dataimport.DocBuilder.finish(DocBuilder.java:307)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:253)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.FileNotFoundException: /home/mansk/solr-6.3.0/server/solr/url_core/conf/dataimport.properties (Permission denied)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.apache.solr.handler.dataimport.SimplePropertiesWriter.persist(SimplePropertiesWriter.java:215)
+	... 6 more
+2016-12-11 03:51:07.486 INFO  (Thread-20) [   x:url_core] o.a.s.h.d.DocBuilder Time taken = 0:0:0.168
+2016-12-11 03:51:07.486 INFO  (Thread-20) [   x:url_core] o.a.s.u.p.LogUpdateProcessorFactory [url_core]  webapp=/solr path=/dataimport params={core=url_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1481428228287&verbose=false} status=0 QTime=8{deleteByQuery=*:* (-1553390126832287744),add=[1 (1553390126873182208), 2 (1553390126877376512), 3 (1553390126877376513), 4 (1553390126878425088)],commit=} 0 184
+2016-12-11 03:51:08.293 INFO  (qtp1528637575-19) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481428228287} status=0 QTime=0
+2016-12-11 03:51:11.699 INFO  (qtp1528637575-14) [   x:url_core] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2016-12-11 03:51:11.701 INFO  (qtp1528637575-14) [   x:url_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-11 03:51:11.701 INFO  (qtp1528637575-14) [   x:url_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-11 03:51:11.701 INFO  (qtp1528637575-14) [   x:url_core] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2016-12-11 03:51:11.702 INFO  (qtp1528637575-14) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=reload-config&_=1481428228287} status=0 QTime=3
+2016-12-11 03:51:11.733 INFO  (qtp1528637575-12) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1481428228285} status=0 QTime=0
+2016-12-11 03:51:11.734 INFO  (qtp1528637575-13) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1481428228287} status=0 QTime=0
+2016-12-11 03:51:11.767 INFO  (qtp1528637575-15) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481428228287} status=0 QTime=0
+2016-12-11 03:51:14.032 INFO  (qtp1528637575-20) [   x:url_core] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2016-12-11 03:51:14.035 INFO  (qtp1528637575-20) [   x:url_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-11 03:51:14.035 INFO  (qtp1528637575-20) [   x:url_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-11 03:51:14.035 INFO  (qtp1528637575-20) [   x:url_core] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2016-12-11 03:51:14.035 INFO  (Thread-21) [   x:url_core] o.a.s.h.d.DataImporter Starting Full Import
+2016-12-11 03:51:14.035 INFO  (qtp1528637575-20) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={core=url_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1481428228287&verbose=false} status=0 QTime=4
+2016-12-11 03:51:14.040 INFO  (Thread-21) [   x:url_core] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-12-11 03:51:14.042 INFO  (qtp1528637575-21) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481428228287} status=0 QTime=0
+2016-12-11 03:51:14.044 INFO  (Thread-21) [   x:url_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@34c8c6[url_core] realtime]
+2016-12-11 03:51:14.052 INFO  (Thread-21) [   x:url_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity id with URL: jdbc:mysql://localhost:3306/mansk
+2016-12-11 03:51:14.063 INFO  (Thread-21) [   x:url_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 10
+2016-12-11 03:51:14.080 INFO  (Thread-21) [   x:url_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity urltext with URL: jdbc:mysql://localhost:3306/mansk
+2016-12-11 03:51:14.096 INFO  (Thread-21) [   x:url_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 15
+2016-12-11 03:51:14.097 WARN  (Thread-21) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=/Women])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:51:14.098 WARN  (Thread-21) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=/Women/Shoes/])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:51:14.099 WARN  (Thread-21) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=/Boat/Shoes])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:51:14.099 WARN  (Thread-21) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=mansy])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:51:14.099 INFO  (Thread-21) [   x:url_core] o.a.s.h.d.DocBuilder Import completed successfully
+2016-12-11 03:51:14.099 INFO  (Thread-21) [   x:url_core] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-12-11 03:51:14.099 INFO  (Thread-21) [   x:url_core] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@6e41c7e
+2016-12-11 03:51:14.141 INFO  (Thread-21) [   x:url_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@3451a8a4[url_core] main]
+2016-12-11 03:51:14.142 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@3451a8a4[url_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1d(6.3.0):C4)))}
+2016-12-11 03:51:14.142 INFO  (Thread-21) [   x:url_core] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-12-11 03:51:14.142 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-12-11 03:51:14.143 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.SolrCore [url_core] Registered new searcher Searcher@3451a8a4[url_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1d(6.3.0):C4)))}
+2016-12-11 03:51:14.145 INFO  (Thread-21) [   x:url_core] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-12-11 03:51:14.146 ERROR (Thread-21) [   x:url_core] o.a.s.h.d.DocBuilder Could not write property file
+org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to persist Index Start Time Processing Document # 5
+	at org.apache.solr.handler.dataimport.SimplePropertiesWriter.persist(SimplePropertiesWriter.java:219)
+	at org.apache.solr.handler.dataimport.DocBuilder.finish(DocBuilder.java:307)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:253)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.FileNotFoundException: /home/mansk/solr-6.3.0/server/solr/url_core/conf/dataimport.properties (Permission denied)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.apache.solr.handler.dataimport.SimplePropertiesWriter.persist(SimplePropertiesWriter.java:215)
+	... 6 more
+2016-12-11 03:51:14.146 INFO  (Thread-21) [   x:url_core] o.a.s.h.d.DocBuilder Time taken = 0:0:0.106
+2016-12-11 03:51:14.146 INFO  (Thread-21) [   x:url_core] o.a.s.u.p.LogUpdateProcessorFactory [url_core]  webapp=/solr path=/dataimport params={core=url_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1481428228287&verbose=false} status=0 QTime=4{deleteByQuery=*:* (-1553390133879767040),add=[1 (1553390133908078592), 2 (1553390133911224320), 3 (1553390133912272896), 4 (1553390133913321472)],commit=} 0 115
+2016-12-11 03:51:15.478 INFO  (qtp1528637575-17) [   x:url_core] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2016-12-11 03:51:15.480 INFO  (qtp1528637575-17) [   x:url_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-11 03:51:15.481 INFO  (qtp1528637575-17) [   x:url_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-11 03:51:15.481 INFO  (qtp1528637575-17) [   x:url_core] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2016-12-11 03:51:15.481 INFO  (qtp1528637575-17) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={core=url_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1481428228287&verbose=false} status=0 QTime=3
+2016-12-11 03:51:15.482 INFO  (Thread-22) [   x:url_core] o.a.s.h.d.DataImporter Starting Full Import
+2016-12-11 03:51:15.485 INFO  (Thread-22) [   x:url_core] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-12-11 03:51:15.489 INFO  (Thread-22) [   x:url_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@31c01824[url_core] realtime]
+2016-12-11 03:51:15.493 INFO  (Thread-22) [   x:url_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity id with URL: jdbc:mysql://localhost:3306/mansk
+2016-12-11 03:51:15.507 INFO  (Thread-22) [   x:url_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 13
+2016-12-11 03:51:15.509 INFO  (qtp1528637575-18) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481428228287} status=0 QTime=0
+2016-12-11 03:51:15.516 INFO  (Thread-22) [   x:url_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity urltext with URL: jdbc:mysql://localhost:3306/mansk
+2016-12-11 03:51:15.524 INFO  (Thread-22) [   x:url_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 8
+2016-12-11 03:51:15.525 WARN  (Thread-22) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=/Women])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:51:15.526 WARN  (Thread-22) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=/Women/Shoes/])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:51:15.527 WARN  (Thread-22) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=/Boat/Shoes])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:51:15.527 WARN  (Thread-22) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=mansy])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:51:15.528 INFO  (Thread-22) [   x:url_core] o.a.s.h.d.DocBuilder Import completed successfully
+2016-12-11 03:51:15.528 INFO  (Thread-22) [   x:url_core] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-12-11 03:51:15.528 INFO  (Thread-22) [   x:url_core] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@6e41c7e
+2016-12-11 03:51:15.589 INFO  (Thread-22) [   x:url_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@2db693cd[url_core] main]
+2016-12-11 03:51:15.591 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@2db693cd[url_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1e(6.3.0):C4)))}
+2016-12-11 03:51:15.591 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-12-11 03:51:15.591 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.SolrCore [url_core] Registered new searcher Searcher@2db693cd[url_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1e(6.3.0):C4)))}
+2016-12-11 03:51:15.593 INFO  (Thread-22) [   x:url_core] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-12-11 03:51:15.594 INFO  (Thread-22) [   x:url_core] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-12-11 03:51:15.595 ERROR (Thread-22) [   x:url_core] o.a.s.h.d.DocBuilder Could not write property file
+org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to persist Index Start Time Processing Document # 5
+	at org.apache.solr.handler.dataimport.SimplePropertiesWriter.persist(SimplePropertiesWriter.java:219)
+	at org.apache.solr.handler.dataimport.DocBuilder.finish(DocBuilder.java:307)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:253)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.FileNotFoundException: /home/mansk/solr-6.3.0/server/solr/url_core/conf/dataimport.properties (Permission denied)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.apache.solr.handler.dataimport.SimplePropertiesWriter.persist(SimplePropertiesWriter.java:215)
+	... 6 more
+2016-12-11 03:51:15.595 INFO  (Thread-22) [   x:url_core] o.a.s.h.d.DocBuilder Time taken = 0:0:0.110
+2016-12-11 03:51:15.595 INFO  (Thread-22) [   x:url_core] o.a.s.u.p.LogUpdateProcessorFactory [url_core]  webapp=/solr path=/dataimport params={core=url_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1481428228287&verbose=false} status=0 QTime=3{deleteByQuery=*:* (-1553390135394959360),add=[1 (1553390135419076608), 2 (1553390135422222336), 3 (1553390135423270912), 4 (1553390135423270913)],commit=} 0 117
+2016-12-11 03:51:16.385 INFO  (qtp1528637575-14) [   x:url_core] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2016-12-11 03:51:16.387 INFO  (qtp1528637575-14) [   x:url_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-11 03:51:16.388 INFO  (qtp1528637575-14) [   x:url_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-11 03:51:16.388 INFO  (qtp1528637575-14) [   x:url_core] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2016-12-11 03:51:16.388 INFO  (qtp1528637575-14) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={core=url_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1481428228287&verbose=false} status=0 QTime=3
+2016-12-11 03:51:16.389 INFO  (Thread-23) [   x:url_core] o.a.s.h.d.DataImporter Starting Full Import
+2016-12-11 03:51:16.394 INFO  (Thread-23) [   x:url_core] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-12-11 03:51:16.397 INFO  (Thread-23) [   x:url_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@466893b3[url_core] realtime]
+2016-12-11 03:51:16.401 INFO  (Thread-23) [   x:url_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity id with URL: jdbc:mysql://localhost:3306/mansk
+2016-12-11 03:51:16.405 INFO  (qtp1528637575-13) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481428228287} status=0 QTime=0
+2016-12-11 03:51:16.407 INFO  (Thread-23) [   x:url_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 5
+2016-12-11 03:51:16.415 INFO  (Thread-23) [   x:url_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity urltext with URL: jdbc:mysql://localhost:3306/mansk
+2016-12-11 03:51:16.421 INFO  (Thread-23) [   x:url_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 5
+2016-12-11 03:51:16.422 WARN  (Thread-23) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=/Women])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:51:16.423 WARN  (Thread-23) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=/Women/Shoes/])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:51:16.423 WARN  (Thread-23) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=/Boat/Shoes])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:51:16.424 WARN  (Thread-23) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=mansy])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:51:16.424 INFO  (Thread-23) [   x:url_core] o.a.s.h.d.DocBuilder Import completed successfully
+2016-12-11 03:51:16.424 INFO  (Thread-23) [   x:url_core] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-12-11 03:51:16.424 INFO  (Thread-23) [   x:url_core] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@6e41c7e
+2016-12-11 03:51:16.478 INFO  (Thread-23) [   x:url_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@52d3ed24[url_core] main]
+2016-12-11 03:51:16.479 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@52d3ed24[url_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1f(6.3.0):C4)))}
+2016-12-11 03:51:16.479 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-12-11 03:51:16.479 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.SolrCore [url_core] Registered new searcher Searcher@52d3ed24[url_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1f(6.3.0):C4)))}
+2016-12-11 03:51:16.481 INFO  (Thread-23) [   x:url_core] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-12-11 03:51:16.482 INFO  (Thread-23) [   x:url_core] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-12-11 03:51:16.483 ERROR (Thread-23) [   x:url_core] o.a.s.h.d.DocBuilder Could not write property file
+org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to persist Index Start Time Processing Document # 5
+	at org.apache.solr.handler.dataimport.SimplePropertiesWriter.persist(SimplePropertiesWriter.java:219)
+	at org.apache.solr.handler.dataimport.DocBuilder.finish(DocBuilder.java:307)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:253)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.FileNotFoundException: /home/mansk/solr-6.3.0/server/solr/url_core/conf/dataimport.properties (Permission denied)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.apache.solr.handler.dataimport.SimplePropertiesWriter.persist(SimplePropertiesWriter.java:215)
+	... 6 more
+2016-12-11 03:51:16.483 INFO  (Thread-23) [   x:url_core] o.a.s.h.d.DocBuilder Time taken = 0:0:0.88
+2016-12-11 03:51:16.483 INFO  (Thread-23) [   x:url_core] o.a.s.u.p.LogUpdateProcessorFactory [url_core]  webapp=/solr path=/dataimport params={core=url_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1481428228287&verbose=false} status=0 QTime=3{deleteByQuery=*:* (-1553390136349163520),add=[1 (1553390136361746432), 2 (1553390136363843584), 3 (1553390136363843585), 4 (1553390136364892160)],commit=} 0 98
+2016-12-11 03:51:17.164 INFO  (qtp1528637575-15) [   x:url_core] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2016-12-11 03:51:17.167 INFO  (qtp1528637575-15) [   x:url_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-11 03:51:17.167 INFO  (qtp1528637575-15) [   x:url_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-11 03:51:17.167 INFO  (qtp1528637575-15) [   x:url_core] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2016-12-11 03:51:17.167 INFO  (qtp1528637575-15) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={core=url_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1481428228287&verbose=false} status=0 QTime=3
+2016-12-11 03:51:17.168 INFO  (Thread-24) [   x:url_core] o.a.s.h.d.DataImporter Starting Full Import
+2016-12-11 03:51:17.173 INFO  (Thread-24) [   x:url_core] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-12-11 03:51:17.176 INFO  (Thread-24) [   x:url_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@4b6e527a[url_core] realtime]
+2016-12-11 03:51:17.183 INFO  (Thread-24) [   x:url_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity id with URL: jdbc:mysql://localhost:3306/mansk
+2016-12-11 03:51:17.185 INFO  (qtp1528637575-19) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481428228287} status=0 QTime=0
+2016-12-11 03:51:17.190 INFO  (Thread-24) [   x:url_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 6
+2016-12-11 03:51:17.200 INFO  (Thread-24) [   x:url_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity urltext with URL: jdbc:mysql://localhost:3306/mansk
+2016-12-11 03:51:17.213 INFO  (Thread-24) [   x:url_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 13
+2016-12-11 03:51:17.214 WARN  (Thread-24) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=/Women])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:51:17.215 WARN  (Thread-24) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=/Women/Shoes/])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:51:17.216 WARN  (Thread-24) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=/Boat/Shoes])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:51:17.216 WARN  (Thread-24) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=mansy])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:51:17.217 INFO  (Thread-24) [   x:url_core] o.a.s.h.d.DocBuilder Import completed successfully
+2016-12-11 03:51:17.217 INFO  (Thread-24) [   x:url_core] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-12-11 03:51:17.217 INFO  (Thread-24) [   x:url_core] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@6e41c7e
+2016-12-11 03:51:17.283 INFO  (Thread-24) [   x:url_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@1318e034[url_core] main]
+2016-12-11 03:51:17.284 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@1318e034[url_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1g(6.3.0):C4)))}
+2016-12-11 03:51:17.284 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-12-11 03:51:17.285 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.SolrCore [url_core] Registered new searcher Searcher@1318e034[url_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1g(6.3.0):C4)))}
+2016-12-11 03:51:17.289 INFO  (Thread-24) [   x:url_core] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-12-11 03:51:17.289 INFO  (Thread-24) [   x:url_core] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-12-11 03:51:17.289 ERROR (Thread-24) [   x:url_core] o.a.s.h.d.DocBuilder Could not write property file
+org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to persist Index Start Time Processing Document # 5
+	at org.apache.solr.handler.dataimport.SimplePropertiesWriter.persist(SimplePropertiesWriter.java:219)
+	at org.apache.solr.handler.dataimport.DocBuilder.finish(DocBuilder.java:307)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:253)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.FileNotFoundException: /home/mansk/solr-6.3.0/server/solr/url_core/conf/dataimport.properties (Permission denied)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.apache.solr.handler.dataimport.SimplePropertiesWriter.persist(SimplePropertiesWriter.java:215)
+	... 6 more
+2016-12-11 03:51:17.290 INFO  (Thread-24) [   x:url_core] o.a.s.h.d.DocBuilder Time taken = 0:0:0.116
+2016-12-11 03:51:17.290 INFO  (Thread-24) [   x:url_core] o.a.s.u.p.LogUpdateProcessorFactory [url_core]  webapp=/solr path=/dataimport params={core=url_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1481428228287&verbose=false} status=0 QTime=3{deleteByQuery=*:* (-1553390137164955648),add=[1 (1553390137183830016), 2 (1553390137184878592), 3 (1553390137185927168), 4 (1553390137186975744)],commit=} 0 125
+2016-12-11 03:51:18.068 INFO  (qtp1528637575-20) [   x:url_core] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2016-12-11 03:51:18.070 INFO  (qtp1528637575-20) [   x:url_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-11 03:51:18.070 INFO  (qtp1528637575-20) [   x:url_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-11 03:51:18.070 INFO  (qtp1528637575-20) [   x:url_core] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2016-12-11 03:51:18.071 INFO  (qtp1528637575-20) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={core=url_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1481428228287&verbose=false} status=0 QTime=2
+2016-12-11 03:51:18.071 INFO  (Thread-25) [   x:url_core] o.a.s.h.d.DataImporter Starting Full Import
+2016-12-11 03:51:18.078 INFO  (Thread-25) [   x:url_core] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-12-11 03:51:18.088 INFO  (Thread-25) [   x:url_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@4e83709c[url_core] realtime]
+2016-12-11 03:51:18.093 INFO  (Thread-25) [   x:url_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity id with URL: jdbc:mysql://localhost:3306/mansk
+2016-12-11 03:51:18.095 INFO  (qtp1528637575-21) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481428228287} status=0 QTime=0
+2016-12-11 03:51:18.101 INFO  (Thread-25) [   x:url_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 7
+2016-12-11 03:51:18.107 INFO  (Thread-25) [   x:url_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity urltext with URL: jdbc:mysql://localhost:3306/mansk
+2016-12-11 03:51:18.117 INFO  (Thread-25) [   x:url_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 9
+2016-12-11 03:51:18.120 WARN  (Thread-25) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=/Women])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:51:18.120 WARN  (Thread-25) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=/Women/Shoes/])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:51:18.121 WARN  (Thread-25) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=/Boat/Shoes])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:51:18.122 WARN  (Thread-25) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=mansy])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:51:18.126 INFO  (Thread-25) [   x:url_core] o.a.s.h.d.DocBuilder Import completed successfully
+2016-12-11 03:51:18.126 INFO  (Thread-25) [   x:url_core] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-12-11 03:51:18.126 INFO  (Thread-25) [   x:url_core] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@6e41c7e
+2016-12-11 03:51:18.168 INFO  (Thread-25) [   x:url_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@6f924238[url_core] main]
+2016-12-11 03:51:18.169 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@6f924238[url_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1h(6.3.0):C4)))}
+2016-12-11 03:51:18.169 INFO  (Thread-25) [   x:url_core] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-12-11 03:51:18.169 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-12-11 03:51:18.169 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.SolrCore [url_core] Registered new searcher Searcher@6f924238[url_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1h(6.3.0):C4)))}
+2016-12-11 03:51:18.171 INFO  (Thread-25) [   x:url_core] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-12-11 03:51:18.171 ERROR (Thread-25) [   x:url_core] o.a.s.h.d.DocBuilder Could not write property file
+org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to persist Index Start Time Processing Document # 5
+	at org.apache.solr.handler.dataimport.SimplePropertiesWriter.persist(SimplePropertiesWriter.java:219)
+	at org.apache.solr.handler.dataimport.DocBuilder.finish(DocBuilder.java:307)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:253)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.FileNotFoundException: /home/mansk/solr-6.3.0/server/solr/url_core/conf/dataimport.properties (Permission denied)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.apache.solr.handler.dataimport.SimplePropertiesWriter.persist(SimplePropertiesWriter.java:215)
+	... 6 more
+2016-12-11 03:51:18.171 INFO  (Thread-25) [   x:url_core] o.a.s.h.d.DocBuilder Time taken = 0:0:0.92
+2016-12-11 03:51:18.171 INFO  (Thread-25) [   x:url_core] o.a.s.u.p.LogUpdateProcessorFactory [url_core]  webapp=/solr path=/dataimport params={core=url_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1481428228287&verbose=false} status=0 QTime=2{deleteByQuery=*:* (-1553390138114965504),add=[1 (1553390138139082752), 2 (1553390138140131328), 3 (1553390138140131329), 4 (1553390138141179904)],commit=} 0 103
+2016-12-11 03:51:18.863 INFO  (qtp1528637575-17) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481428228287} status=0 QTime=0
+2016-12-11 03:51:22.664 INFO  (qtp1528637575-18) [   x:url_core] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2016-12-11 03:51:22.667 INFO  (qtp1528637575-18) [   x:url_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-11 03:51:22.667 INFO  (qtp1528637575-18) [   x:url_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-11 03:51:22.667 INFO  (qtp1528637575-18) [   x:url_core] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2016-12-11 03:51:22.668 INFO  (Thread-26) [   x:url_core] o.a.s.h.d.DataImporter Starting Full Import
+2016-12-11 03:51:22.668 INFO  (qtp1528637575-18) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={core=url_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1481428228287&verbose=false} status=0 QTime=3
+2016-12-11 03:51:22.672 INFO  (Thread-26) [   x:url_core] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-12-11 03:51:22.673 INFO  (qtp1528637575-20) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481428228287} status=0 QTime=0
+2016-12-11 03:51:22.675 INFO  (Thread-26) [   x:url_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@60389b7[url_core] realtime]
+2016-12-11 03:51:22.680 INFO  (Thread-26) [   x:url_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity id with URL: jdbc:mysql://localhost:3306/mansk
+2016-12-11 03:51:22.695 INFO  (Thread-26) [   x:url_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 14
+2016-12-11 03:51:22.704 INFO  (Thread-26) [   x:url_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity urltext with URL: jdbc:mysql://localhost:3306/mansk
+2016-12-11 03:51:22.722 INFO  (Thread-26) [   x:url_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 17
+2016-12-11 03:51:22.723 WARN  (Thread-26) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=/Women])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:51:22.723 WARN  (Thread-26) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=/Women/Shoes/])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:51:22.724 WARN  (Thread-26) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=/Boat/Shoes])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:51:22.724 WARN  (Thread-26) [   x:url_core] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [url2=mansy])
+org.apache.solr.common.SolrException: Document is missing mandatory uniqueKey field: id
+	at org.apache.solr.update.AddUpdateCommand.getIndexedId(AddUpdateCommand.java:97)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:970)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:738)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:526)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+2016-12-11 03:51:22.724 INFO  (Thread-26) [   x:url_core] o.a.s.h.d.DocBuilder Import completed successfully
+2016-12-11 03:51:22.724 INFO  (Thread-26) [   x:url_core] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-12-11 03:51:22.724 INFO  (Thread-26) [   x:url_core] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@6e41c7e
+2016-12-11 03:51:22.769 INFO  (Thread-26) [   x:url_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@a295ef9[url_core] main]
+2016-12-11 03:51:22.770 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@a295ef9[url_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1i(6.3.0):C4)))}
+2016-12-11 03:51:22.770 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-12-11 03:51:22.770 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.SolrCore [url_core] Registered new searcher Searcher@a295ef9[url_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1i(6.3.0):C4)))}
+2016-12-11 03:51:22.771 INFO  (Thread-26) [   x:url_core] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-12-11 03:51:22.773 INFO  (Thread-26) [   x:url_core] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-12-11 03:51:22.773 ERROR (Thread-26) [   x:url_core] o.a.s.h.d.DocBuilder Could not write property file
+org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to persist Index Start Time Processing Document # 5
+	at org.apache.solr.handler.dataimport.SimplePropertiesWriter.persist(SimplePropertiesWriter.java:219)
+	at org.apache.solr.handler.dataimport.DocBuilder.finish(DocBuilder.java:307)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:253)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.FileNotFoundException: /home/mansk/solr-6.3.0/server/solr/url_core/conf/dataimport.properties (Permission denied)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.apache.solr.handler.dataimport.SimplePropertiesWriter.persist(SimplePropertiesWriter.java:215)
+	... 6 more
+2016-12-11 03:51:22.773 INFO  (Thread-26) [   x:url_core] o.a.s.h.d.DocBuilder Time taken = 0:0:0.101
+2016-12-11 03:51:22.773 INFO  (Thread-26) [   x:url_core] o.a.s.u.p.LogUpdateProcessorFactory [url_core]  webapp=/solr path=/dataimport params={core=url_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1481428228287&verbose=false} status=0 QTime=3{deleteByQuery=*:* (-1553390142931075072),add=[1 (1553390142956240896), 2 (1553390142958338048), 3 (1553390142959386624), 4 (1553390142960435200)],commit=} 0 109
+2016-12-11 03:51:25.774 INFO  (qtp1528637575-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481428147490} status=0 QTime=0
+2016-12-11 03:51:25.785 INFO  (qtp1528637575-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481428147491} status=0 QTime=8
+2016-12-11 03:51:27.458 INFO  (qtp1528637575-14) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1481428157862} hits=4 status=0 QTime=0
+2016-12-11 03:51:41.630 INFO  (qtp1528637575-18) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=url:women&indent=on&wt=json&_=1481428157862} hits=0 status=0 QTime=5
+2016-12-11 03:51:50.667 ERROR (qtp1528637575-21) [   x:url_core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'url:/women': Lexical error at line 1, column 11.  Encountered: <EOF> after : "/women"
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:153)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2213)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:654)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:460)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:303)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:254)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'url:/women': Lexical error at line 1, column 11.  Encountered: <EOF> after : "/women"
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:156)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:50)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:140)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:161)
+	... 31 more
+Caused by: org.apache.solr.parser.TokenMgrError: Lexical error at line 1, column 11.  Encountered: <EOF> after : "/women"
+	at org.apache.solr.parser.QueryParserTokenManager.getNextToken(QueryParserTokenManager.java:1572)
+	at org.apache.solr.parser.QueryParser.jj_ntk(QueryParser.java:589)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:169)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:101)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:90)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:152)
+	... 34 more
+
+2016-12-11 03:51:50.667 INFO  (qtp1528637575-21) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=url:/women&indent=on&wt=json&_=1481428157862} status=400 QTime=2
+2016-12-11 03:52:05.241 INFO  (qtp1528637575-12) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1481428157862} hits=4 status=0 QTime=0
+2016-12-11 03:52:18.280 INFO  (qtp1528637575-21) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=url2:women&indent=on&wt=json&_=1481428157862} hits=2 status=0 QTime=4
+2016-12-11 04:30:59.745 INFO  (qtp1528637575-12) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=url:/products/gender%3Dfemale&indent=on&wt=json&_=1481428157862} hits=3 status=0 QTime=18
+2016-12-11 04:31:22.621 INFO  (qtp1528637575-13) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=url:/products/tag%3D5678&indent=on&wt=json&_=1481428157862} hits=3 status=0 QTime=3
+2016-12-11 04:31:25.451 INFO  (qtp1528637575-20) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=url:/products/tag%3D5678&indent=on&wt=json&_=1481428157862} hits=3 status=0 QTime=1
+2016-12-11 04:31:25.810 INFO  (qtp1528637575-14) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=url:/products/tag%3D5678&indent=on&wt=json&_=1481428157862} hits=3 status=0 QTime=1
+2016-12-11 04:33:06.940 INFO  (qtp1528637575-12) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=foundation&indent=on&wt=json&_=1481428157862} hits=0 status=0 QTime=1
+2016-12-11 04:33:10.707 INFO  (qtp1528637575-21) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1481428228285} status=0 QTime=0
+2016-12-11 04:33:10.709 INFO  (qtp1528637575-17) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1481428228287} status=0 QTime=0
+2016-12-11 04:33:10.765 INFO  (qtp1528637575-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481428147490} status=0 QTime=0
+2016-12-11 04:33:10.777 INFO  (qtp1528637575-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481428147491} status=0 QTime=12
+2016-12-11 04:33:10.789 INFO  (qtp1528637575-15) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481428228287} status=0 QTime=0
+2016-12-11 04:33:12.745 INFO  (qtp1528637575-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481428147490} status=0 QTime=0
+2016-12-11 04:33:12.756 INFO  (qtp1528637575-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481428147491} status=0 QTime=9
+2016-12-11 04:33:15.195 INFO  (qtp1528637575-14) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1481428157862} hits=4 status=0 QTime=0
+2016-12-11 04:33:28.235 INFO  (qtp1528637575-17) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=/products/tag%3D5678&indent=on&wt=json&_=1481428157862} hits=0 status=0 QTime=1
+2016-12-11 04:35:06.026 INFO  (qtp1528637575-17) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=url:/products/tag%3D5678&indent=on&wt=json&_=1481428157862} hits=3 status=0 QTime=1
+2016-12-11 04:35:28.624 INFO  (qtp1528637575-13) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=url%3D/products/tag%3D5678&indent=on&wt=json&_=1481428157862} hits=0 status=0 QTime=1
+2016-12-11 04:35:35.983 INFO  (qtp1528637575-21) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=url%3D/products/tag%3D5678&indent=on&wt=json} hits=0 status=0 QTime=1
+2016-12-11 04:35:42.021 INFO  (qtp1528637575-14) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=url%3D/products/tag%3D5678&indent=on&wt=json&url=/products/tag%3D5678} hits=0 status=0 QTime=1
+2016-12-11 04:36:01.532 INFO  (qtp1528637575-20) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={indent=on&wt=json&url=/products/tag%3D5678} hits=0 status=0 QTime=1
+2016-12-11 04:36:13.015 INFO  (qtp1528637575-14) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=url:/products/tag%3D5678&indent=on&wt=json&url=/products/tag%3D5678} hits=3 status=0 QTime=1
+2016-12-11 04:37:05.852 INFO  (qtp1528637575-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481431025510} status=0 QTime=0
+2016-12-11 04:37:05.861 INFO  (qtp1528637575-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481431025512} status=0 QTime=7
+2016-12-11 04:37:27.163 INFO  (qtp1528637575-17) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=*:*&defType=dismax&indent=on&wt=json&_=1481431025721} hits=0 status=0 QTime=3
+2016-12-11 04:37:32.750 INFO  (qtp1528637575-14) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1481431025721} hits=4 status=0 QTime=0
+2016-12-11 04:38:07.471 INFO  (qtp1528637575-19) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=*:*&indent=on&fq=url%3D/products/tag%3D5678&wt=json&_=1481431025721} hits=0 status=0 QTime=9
+2016-12-11 04:38:15.312 INFO  (qtp1528637575-14) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=*:*&indent=on&fq=url:/products/tag%3D5678&wt=json&_=1481431025721} hits=3 status=0 QTime=1
+2016-12-11 04:38:31.372 INFO  (qtp1528637575-15) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=*:*&indent=on&fq=url:"/products/tag%3D5678"&wt=json&_=1481431025721} hits=1 status=0 QTime=19
+2016-12-11 04:38:39.934 INFO  (qtp1528637575-17) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=url:"/products/tag%3D5678"&indent=on&wt=json&_=1481431025721} hits=1 status=0 QTime=1
+2016-12-11 04:38:48.246 INFO  (qtp1528637575-18) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=url:"/products/t8"&indent=on&wt=json&_=1481431025721} hits=0 status=0 QTime=1
+2016-12-11 04:43:14.350 INFO  (qtp1528637575-14) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=url:"/products/t8"&indent=on&wt=json&_=1481431025721} hits=0 status=0 QTime=1
+2016-12-11 04:43:22.910 INFO  (qtp1528637575-20) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={indent=on&wt=json&_=1481431025721} hits=0 status=0 QTime=0
+2016-12-11 04:43:29.236 INFO  (qtp1528637575-13) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1481431025721} hits=4 status=0 QTime=0
+2016-12-11 04:43:34.846 INFO  (qtp1528637575-18) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=*:*&indent=on&fq=url:"/products/t8"&wt=json&_=1481431025721} hits=0 status=0 QTime=1
+2016-12-11 04:43:38.181 INFO  (qtp1528637575-12) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1481431025721} hits=4 status=0 QTime=0
+2016-12-11 04:43:48.951 ERROR (qtp1528637575-17) [   x:url_core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse '"url2":"/Women"': Encountered " ":" ": "" at line 1, column 6.
+Was expecting one of:
+    <EOF> 
+    <AND> ...
+    <OR> ...
+    <NOT> ...
+    "+" ...
+    "-" ...
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    "^" ...
+    <QUOTED> ...
+    <TERM> ...
+    <FUZZY_SLOP> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:153)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2213)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:654)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:460)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:303)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:254)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse '"url2":"/Women"': Encountered " ":" ": "" at line 1, column 6.
+Was expecting one of:
+    <EOF> 
+    <AND> ...
+    <OR> ...
+    <NOT> ...
+    "+" ...
+    "-" ...
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    "^" ...
+    <QUOTED> ...
+    <TERM> ...
+    <FUZZY_SLOP> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:156)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:50)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:140)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:207)
+	... 31 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " ":" ": "" at line 1, column 6.
+Was expecting one of:
+    <EOF> 
+    <AND> ...
+    <OR> ...
+    <NOT> ...
+    "+" ...
+    "-" ...
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    "^" ...
+    <QUOTED> ...
+    <TERM> ...
+    <FUZZY_SLOP> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:659)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:541)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:91)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:152)
+	... 34 more
+
+2016-12-11 04:43:48.952 INFO  (qtp1528637575-17) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=*:*&indent=on&fq="url2":"/Women"&wt=json&_=1481431025721} status=400 QTime=2
+2016-12-11 04:43:54.721 INFO  (qtp1528637575-13) [   x:url_core] o.a.s.c.S.Request [url_core]  webapp=/solr path=/select params={q=*:*&indent=on&fq=url2:"/Women"&wt=json&_=1481431025721} hits=2 status=0 QTime=1
+2016-12-11 05:59:44.382 INFO  (qtp1528637575-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481435984178} status=0 QTime=1
+2016-12-11 05:59:44.393 INFO  (qtp1528637575-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481435984179} status=0 QTime=9
+2016-12-11 05:59:44.405 INFO  (qtp1528637575-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481435984179} status=0 QTime=9
+2016-12-11 06:04:20.210 INFO  (qtp1528637575-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481436260007} status=0 QTime=0
+2016-12-11 06:04:20.224 INFO  (qtp1528637575-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481436260008} status=0 QTime=10
+2016-12-11 06:04:50.102 INFO  (qtp1528637575-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481436289908} status=0 QTime=0
+2016-12-11 06:04:50.115 INFO  (qtp1528637575-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481436289910} status=0 QTime=11

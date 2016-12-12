@@ -1,0 +1,38 @@
+Request: GET: http://localhost:8983/solr/url_lookup_core/select?indent=on&q=url_from:"/products?tag=5678"&wt=json
+
+response: 
+{
+  "responseHeader":{
+    "status":0,
+    "QTime":1,
+    "params":{
+      "q":"url_from:\"/products?tag=5678\"",
+      "indent":"on",
+      "wt":"json"}},
+  "response":{"numFound":1,"start":0,"docs":[
+      {
+        "id":"4",
+        "url_to":"/Boat­Shoes",
+        "url_from":"/products?tag=5678",
+        "_version_":1553472647308771328}]
+  }}
+
+
+
+Request: GET: http://localhost:8983/solr/url_lookup_core/select?indent=on&q=url_to:"/Women/Shoes/"&wt=json
+Response:
+{
+  "responseHeader":{
+    "status":0,
+    "QTime":1,
+    "params":{
+      "q":"url_to:\"/Women/Shoes/\"",
+      "indent":"on",
+      "wt":"json"}},
+  "response":{"numFound":1,"start":0,"docs":[
+      {
+        "id":"3",
+        "url_to":"/Women/Shoes/",
+        "url_from":"/products?gender=female&tag=1234",
+        "_version_":1553472647307722753}]
+  }}

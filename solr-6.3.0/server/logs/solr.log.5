@@ -1,0 +1,87 @@
+2016-12-12 01:30:03.850 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.8.v20160314
+2016-12-12 01:30:04.170 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.3.0
+2016-12-12 01:30:04.171 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2016-12-12 01:30:04.171 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/mansk/solr-6.3.0
+2016-12-12 01:30:04.242 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2016-12-12T01:30:04.172Z
+2016-12-12 01:30:04.244 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2016-12-12 01:30:04.262 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/mansk/solr-6.3.0/server/solr
+2016-12-12 01:30:04.268 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/mansk/solr-6.3.0/server/solr/solr.xml
+2016-12-12 01:30:04.562 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2016-12-12 01:30:04.624 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 2 core definitions underneath /home/mansk/solr-6.3.0/server/solr
+2016-12-12 01:30:04.631 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [url_lookup_core, url_core]
+2016-12-12 01:30:04.667 INFO  (main) [   ] o.e.j.s.ServerConnector Started ServerConnector@2a5c8d3f{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2016-12-12 01:30:04.667 INFO  (main) [   ] o.e.j.s.Server Started @1351ms
+2016-12-12 01:30:04.735 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader [url_lookup_core] Added 51 libs to classloader, from paths: [/home/mansk/solr-6.3.0/contrib/clustering/lib, /home/mansk/solr-6.3.0/contrib/extraction/lib, /home/mansk/solr-6.3.0/contrib/langid/lib, /home/mansk/solr-6.3.0/contrib/velocity/lib, /home/mansk/solr-6.3.0/dist]
+2016-12-12 01:30:04.735 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader [url_core] Added 53 libs to classloader, from paths: [/home/mansk/solr-6.3.0/contrib/clustering/lib, /home/mansk/solr-6.3.0/contrib/dataimporthandler/lib, /home/mansk/solr-6.3.0/contrib/extraction/lib, /home/mansk/solr-6.3.0/contrib/langid/lib, /home/mansk/solr-6.3.0/contrib/velocity/lib, /home/mansk/solr-6.3.0/dist]
+2016-12-12 01:30:04.965 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.3.0
+2016-12-12 01:30:04.983 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.3.0
+2016-12-12 01:30:05.144 WARN  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
+2016-12-12 01:30:05.250 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema [url_core] Schema name=example-basic
+2016-12-12 01:30:05.284 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema [url_lookup_core] Schema name=example-basic
+2016-12-12 01:30:06.134 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema Loaded schema example-basic/1.6 with uniqueid field id
+2016-12-12 01:30:06.143 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema Loaded schema example-basic/1.6 with uniqueid field id
+2016-12-12 01:30:06.206 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.CoreContainer Creating SolrCore 'url_core' using configuration from instancedir /home/mansk/solr-6.3.0/server/solr/url_core
+2016-12-12 01:30:06.246 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.CoreContainer Creating SolrCore 'url_lookup_core' using configuration from instancedir /home/mansk/solr-6.3.0/server/solr/url_lookup_core
+2016-12-12 01:30:06.271 INFO  (coreLoadExecutor-6-thread-1) [   x:url_lookup_core] o.a.s.c.SolrCore [[url_lookup_core] ] Opening new SolrCore at [/home/mansk/solr-6.3.0/server/solr/url_lookup_core], dataDir=[/home/mansk/solr-6.3.0/server/solr/url_lookup_core/data/]
+2016-12-12 01:30:06.271 INFO  (coreLoadExecutor-6-thread-2) [   x:url_core] o.a.s.c.SolrCore [[url_core] ] Opening new SolrCore at [/home/mansk/solr-6.3.0/server/solr/url_core], dataDir=[/home/mansk/solr-6.3.0/server/solr/url_core/data/]
+2016-12-12 01:30:06.322 INFO  (coreLoadExecutor-6-thread-2) [   x:url_core] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2016-12-12 01:30:06.322 INFO  (coreLoadExecutor-6-thread-1) [   x:url_lookup_core] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2016-12-12 01:30:06.701 INFO  (coreLoadExecutor-6-thread-2) [   x:url_core] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2016-12-12 01:30:06.701 INFO  (coreLoadExecutor-6-thread-2) [   x:url_core] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2016-12-12 01:30:06.702 INFO  (coreLoadExecutor-6-thread-1) [   x:url_lookup_core] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2016-12-12 01:30:06.702 INFO  (coreLoadExecutor-6-thread-1) [   x:url_lookup_core] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2016-12-12 01:30:06.713 INFO  (coreLoadExecutor-6-thread-1) [   x:url_lookup_core] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2016-12-12 01:30:06.713 INFO  (coreLoadExecutor-6-thread-1) [   x:url_lookup_core] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2016-12-12 01:30:06.732 INFO  (coreLoadExecutor-6-thread-2) [   x:url_core] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2016-12-12 01:30:06.733 INFO  (coreLoadExecutor-6-thread-2) [   x:url_core] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2016-12-12 01:30:06.787 INFO  (coreLoadExecutor-6-thread-1) [   x:url_lookup_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@5061fcce[url_lookup_core] main]
+2016-12-12 01:30:06.797 INFO  (coreLoadExecutor-6-thread-1) [   x:url_lookup_core] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/mansk/solr-6.3.0/server/solr/url_lookup_core/conf
+2016-12-12 01:30:06.821 INFO  (coreLoadExecutor-6-thread-1) [   x:url_lookup_core] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2016-12-12 01:30:06.827 INFO  (coreLoadExecutor-6-thread-2) [   x:url_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@388ee7ff[url_core] main]
+2016-12-12 01:30:06.828 INFO  (coreLoadExecutor-6-thread-2) [   x:url_core] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/mansk/solr-6.3.0/server/solr/url_core/conf
+2016-12-12 01:30:06.829 INFO  (coreLoadExecutor-6-thread-1) [   x:url_lookup_core] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2016-12-12 01:30:06.831 INFO  (coreLoadExecutor-6-thread-2) [   x:url_core] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2016-12-12 01:30:06.831 INFO  (coreLoadExecutor-6-thread-2) [   x:url_core] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2016-12-12 01:30:06.834 INFO  (coreLoadExecutor-6-thread-2) [   x:url_core] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /home/mansk/solr-6.3.0/server/solr/url_core/conf/elevate.xml
+2016-12-12 01:30:06.834 INFO  (coreLoadExecutor-6-thread-1) [   x:url_lookup_core] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /home/mansk/solr-6.3.0/server/solr/url_lookup_core/conf/elevate.xml
+2016-12-12 01:30:06.857 INFO  (coreLoadExecutor-6-thread-1) [   x:url_lookup_core] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2016-12-12 01:30:06.857 INFO  (coreLoadExecutor-6-thread-2) [   x:url_core] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2016-12-12 01:30:06.878 INFO  (searcherExecutor-8-thread-1-processing-x:url_lookup_core) [   x:url_lookup_core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@5061fcce[url_lookup_core] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2016-12-12 01:30:06.878 INFO  (searcherExecutor-8-thread-1-processing-x:url_lookup_core) [   x:url_lookup_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-12-12 01:30:06.878 INFO  (searcherExecutor-8-thread-1-processing-x:url_lookup_core) [   x:url_lookup_core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2016-12-12 01:30:06.878 INFO  (searcherExecutor-8-thread-1-processing-x:url_lookup_core) [   x:url_lookup_core] o.a.s.c.SolrCore [url_lookup_core] Registered new searcher Searcher@5061fcce[url_lookup_core] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2016-12-12 01:30:06.882 INFO  (coreLoadExecutor-6-thread-1) [   x:url_lookup_core] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1553471852387500032
+2016-12-12 01:30:06.885 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@388ee7ff[url_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1i(6.3.0):C4)))}
+2016-12-12 01:30:06.886 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-12-12 01:30:06.886 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2016-12-12 01:30:06.886 INFO  (searcherExecutor-7-thread-1-processing-x:url_core) [   x:url_core] o.a.s.c.SolrCore [url_core] Registered new searcher Searcher@388ee7ff[url_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1i(6.3.0):C4)))}
+2016-12-12 01:30:20.100 INFO  (qtp1528637575-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=url_core&action=STATUS} status=0 QTime=9
+2016-12-12 01:30:24.633 INFO  (qtp1528637575-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481506224377} status=0 QTime=0
+2016-12-12 01:30:24.703 INFO  (qtp1528637575-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481506224379} status=0 QTime=67
+2016-12-12 01:30:24.725 INFO  (qtp1528637575-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481506224379} status=0 QTime=12
+2016-12-12 01:30:29.640 INFO  (qtp1528637575-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481506224377} status=0 QTime=0
+2016-12-12 01:30:29.644 INFO  (qtp1528637575-13) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1481506229623} status=0 QTime=2
+2016-12-12 01:30:29.648 INFO  (qtp1528637575-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481506224379} status=0 QTime=7
+2016-12-12 01:30:29.651 INFO  (qtp1528637575-21) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/replication params={wt=json&command=details&_=1481506229624} status=0 QTime=1
+2016-12-12 01:30:29.662 INFO  (qtp1528637575-19) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1481506224379&ts=1481506224379} status=503 QTime=2
+2016-12-12 01:30:29.667 INFO  (qtp1528637575-15) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/admin/system params={wt=json&_=1481506229623} status=0 QTime=11
+2016-12-12 01:30:33.968 INFO  (qtp1528637575-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481506224377} status=0 QTime=0
+2016-12-12 01:30:33.980 INFO  (qtp1528637575-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481506224379} status=0 QTime=10
+2016-12-12 01:30:33.980 INFO  (qtp1528637575-12) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1481506233943} status=0 QTime=3
+2016-12-12 01:30:34.046 INFO  (qtp1528637575-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481506224377} status=0 QTime=0
+2016-12-12 01:30:34.047 INFO  (qtp1528637575-16) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1481506233943} status=0 QTime=0
+2016-12-12 01:30:34.062 INFO  (qtp1528637575-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481506224379} status=0 QTime=13
+2016-12-12 01:30:34.760 INFO  (qtp1528637575-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481506224377} status=0 QTime=0
+2016-12-12 01:30:34.783 INFO  (qtp1528637575-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481506224379} status=0 QTime=13
+2016-12-12 01:30:34.787 INFO  (qtp1528637575-19) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1481506229623} status=0 QTime=19
+2016-12-12 01:30:38.985 INFO  (qtp1528637575-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481506224377} status=0 QTime=0
+2016-12-12 01:30:38.992 INFO  (qtp1528637575-15) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1481506233943} status=0 QTime=0
+2016-12-12 01:30:39.002 INFO  (qtp1528637575-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481506224379} status=0 QTime=17
+2016-12-12 01:30:39.061 INFO  (qtp1528637575-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481506224377} status=0 QTime=0
+2016-12-12 01:30:39.068 INFO  (qtp1528637575-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481506224379} status=0 QTime=6
+2016-12-12 01:30:39.075 INFO  (qtp1528637575-16) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1481506233943} status=0 QTime=0
+2016-12-12 01:33:15.783 INFO  (ShutdownMonitor) [   ] o.e.j.s.ServerConnector Stopped ServerConnector@2a5c8d3f{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2016-12-12 01:33:15.784 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=226744878
+2016-12-12 01:33:15.785 INFO  (coreCloseExecutor-17-thread-1) [   x:url_lookup_core] o.a.s.c.SolrCore [url_lookup_core]  CLOSING SolrCore org.apache.solr.core.SolrCore@7773c605
+2016-12-12 01:33:15.785 INFO  (coreCloseExecutor-17-thread-2) [   x:url_core] o.a.s.c.SolrCore [url_core]  CLOSING SolrCore org.apache.solr.core.SolrCore@1547137b
+2016-12-12 01:33:15.802 WARN  (ShutdownMonitor) [   ] o.e.j.s.ServletContextHandler ServletContextHandler.setHandler should not be called directly. Use insertHandler or setSessionHandler etc.
