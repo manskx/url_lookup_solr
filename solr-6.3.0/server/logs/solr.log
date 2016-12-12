@@ -58,3 +58,75 @@
 2016-12-12 02:04:23.683 INFO  (qtp1528637575-15) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/select params={q=url_to:"/Women/Shoes/"&indent=on&wt=json} hits=1 status=0 QTime=4
 2016-12-12 02:04:40.375 INFO  (qtp1528637575-20) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/select params={q=url_from:"/products?tag%3D5678"&indent=on&wt=json} hits=1 status=0 QTime=1
 2016-12-12 02:04:50.674 INFO  (qtp1528637575-15) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/select params={q=url_to:"/Women/Shoes/"&indent=on&wt=json} hits=1 status=0 QTime=1
+2016-12-12 05:53:27.021 INFO  (qtp1528637575-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481522006853} status=0 QTime=1
+2016-12-12 05:53:27.067 INFO  (qtp1528637575-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481522006855} status=0 QTime=41
+2016-12-12 05:53:27.083 INFO  (qtp1528637575-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481522006855} status=0 QTime=7
+2016-12-12 05:53:35.534 INFO  (qtp1528637575-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481522006853} status=0 QTime=0
+2016-12-12 05:53:35.541 INFO  (qtp1528637575-20) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1481522015519} status=0 QTime=0
+2016-12-12 05:53:35.551 INFO  (qtp1528637575-18) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/replication params={wt=json&command=details&_=1481522015519} status=0 QTime=1
+2016-12-12 05:53:35.559 INFO  (qtp1528637575-15) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1481522006856&ts=1481522006856} status=503 QTime=0
+2016-12-12 05:53:35.563 INFO  (qtp1528637575-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481522006855} status=0 QTime=12
+2016-12-12 05:53:35.581 INFO  (qtp1528637575-18) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/admin/system params={wt=json&_=1481522015519} status=0 QTime=23
+2016-12-12 05:53:39.328 INFO  (qtp1528637575-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481522006853} status=0 QTime=0
+2016-12-12 05:53:39.342 INFO  (qtp1528637575-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481522006855} status=0 QTime=7
+2016-12-12 05:53:42.697 INFO  (qtp1528637575-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481522006853} status=0 QTime=0
+2016-12-12 05:53:42.708 INFO  (qtp1528637575-12) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1481522022676} status=0 QTime=4
+2016-12-12 05:53:42.727 INFO  (qtp1528637575-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481522006855} status=0 QTime=25
+2016-12-12 05:53:42.790 INFO  (qtp1528637575-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1481522006853} status=0 QTime=0
+2016-12-12 05:53:42.795 INFO  (qtp1528637575-19) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1481522022676} status=0 QTime=0
+2016-12-12 05:53:42.808 INFO  (qtp1528637575-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1481522006855} status=0 QTime=11
+2016-12-12 05:53:42.813 INFO  (qtp1528637575-13) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1481522022676} status=0 QTime=13
+2016-12-12 05:53:42.829 INFO  (qtp1528637575-18) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481522022676} status=0 QTime=0
+2016-12-12 05:54:03.973 INFO  (qtp1528637575-20) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481522022676} status=0 QTime=0
+2016-12-12 05:54:07.799 INFO  (qtp1528637575-12) [   x:url_lookup_core] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2016-12-12 05:54:07.810 INFO  (qtp1528637575-12) [   x:url_lookup_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-12 05:54:07.810 INFO  (qtp1528637575-12) [   x:url_lookup_core] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2016-12-12 05:54:07.820 INFO  (Thread-14) [   x:url_lookup_core] o.a.s.h.d.DataImporter Starting Full Import
+2016-12-12 05:54:07.820 INFO  (qtp1528637575-12) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={core=url_lookup_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1481522022676&verbose=false} status=0 QTime=22
+2016-12-12 05:54:07.838 INFO  (qtp1528637575-15) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481522022676} status=0 QTime=0
+2016-12-12 05:54:07.844 INFO  (Thread-14) [   x:url_lookup_core] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-12-12 05:54:07.933 INFO  (Thread-14) [   x:url_lookup_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@65a415bb[url_lookup_core] realtime]
+2016-12-12 05:54:07.958 INFO  (Thread-14) [   x:url_lookup_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity id with URL: jdbc:mysql://localhost:3306/URL_Lookup
+2016-12-12 05:54:08.237 INFO  (Thread-14) [   x:url_lookup_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 279
+2016-12-12 05:54:11.711 INFO  (qtp1528637575-20) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481522022676} status=0 QTime=3
+2016-12-12 05:54:12.944 INFO  (Thread-14) [   x:url_lookup_core] o.a.s.h.d.DocBuilder Import completed successfully
+2016-12-12 05:54:12.945 INFO  (Thread-14) [   x:url_lookup_core] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-12-12 05:54:12.945 INFO  (Thread-14) [   x:url_lookup_core] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@3a727c39
+2016-12-12 05:54:15.851 INFO  (Thread-14) [   x:url_lookup_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@40ea0ed1[url_lookup_core] main]
+2016-12-12 05:54:15.855 INFO  (searcherExecutor-7-thread-1-processing-x:url_lookup_core) [   x:url_lookup_core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@40ea0ed1[url_lookup_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_7(6.3.0):C100007)))}
+2016-12-12 05:54:15.855 INFO  (searcherExecutor-7-thread-1-processing-x:url_lookup_core) [   x:url_lookup_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-12-12 05:54:15.856 INFO  (searcherExecutor-7-thread-1-processing-x:url_lookup_core) [   x:url_lookup_core] o.a.s.c.SolrCore [url_lookup_core] Registered new searcher Searcher@40ea0ed1[url_lookup_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_7(6.3.0):C100007)))}
+2016-12-12 05:54:15.856 INFO  (Thread-14) [   x:url_lookup_core] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-12-12 05:54:15.858 INFO  (Thread-14) [   x:url_lookup_core] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-12-12 05:54:15.858 INFO  (Thread-14) [   x:url_lookup_core] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2016-12-12 05:54:15.859 INFO  (Thread-14) [   x:url_lookup_core] o.a.s.h.d.DocBuilder Time taken = 0:0:8.13
+2016-12-12 05:54:15.859 INFO  (Thread-14) [   x:url_lookup_core] o.a.s.u.p.LogUpdateProcessorFactory [url_lookup_core]  webapp=/solr path=/dataimport params={core=url_lookup_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1481522022676&verbose=false} status=0 QTime=22{deleteByQuery=*:* (-1553488462896693248),add=[1 (1553488463361212416), 2 (1553488463382183936), 3 (1553488463383232512), 4 (1553488463383232513), 5 (1553488463384281088), 6 (1553488463384281089), 7 (1553488463385329664), 8 (1553488463385329665), 9 (1553488463386378240), 10 (1553488463387426816), ... (100007 adds)],commit=} 0 8062
+2016-12-12 05:54:16.053 INFO  (qtp1528637575-21) [   x:url_lookup_core] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2016-12-12 05:54:16.056 INFO  (qtp1528637575-21) [   x:url_lookup_core] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-12-12 05:54:16.057 INFO  (qtp1528637575-21) [   x:url_lookup_core] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2016-12-12 05:54:16.059 INFO  (qtp1528637575-21) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={core=url_lookup_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1481522022676&verbose=false} status=0 QTime=6
+2016-12-12 05:54:16.060 INFO  (Thread-16) [   x:url_lookup_core] o.a.s.h.d.DataImporter Starting Full Import
+2016-12-12 05:54:16.069 INFO  (Thread-16) [   x:url_lookup_core] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-12-12 05:54:16.095 INFO  (qtp1528637575-20) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481522022676} status=0 QTime=5
+2016-12-12 05:54:16.178 INFO  (Thread-16) [   x:url_lookup_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@6767c95c[url_lookup_core] realtime]
+2016-12-12 05:54:16.195 INFO  (Thread-16) [   x:url_lookup_core] o.a.s.h.d.JdbcDataSource Creating a connection for entity id with URL: jdbc:mysql://localhost:3306/URL_Lookup
+2016-12-12 05:54:16.213 INFO  (Thread-16) [   x:url_lookup_core] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 17
+2016-12-12 05:54:16.815 INFO  (qtp1528637575-14) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481522022676} status=0 QTime=0
+2016-12-12 05:54:18.927 INFO  (qtp1528637575-14) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={core=url_lookup_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1481522022676&verbose=false} status=0 QTime=0
+2016-12-12 05:54:18.940 INFO  (qtp1528637575-21) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481522022676} status=0 QTime=0
+2016-12-12 05:54:21.758 INFO  (Thread-16) [   x:url_lookup_core] o.a.s.h.d.DocBuilder Import completed successfully
+2016-12-12 05:54:21.758 INFO  (Thread-16) [   x:url_lookup_core] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-12-12 05:54:21.758 INFO  (Thread-16) [   x:url_lookup_core] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@3a727c39
+2016-12-12 05:54:23.841 INFO  (Thread-16) [   x:url_lookup_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@6cf5f207[url_lookup_core] main]
+2016-12-12 05:54:23.842 INFO  (searcherExecutor-7-thread-1-processing-x:url_lookup_core) [   x:url_lookup_core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@6cf5f207[url_lookup_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_8(6.3.0):C100007)))}
+2016-12-12 05:54:23.842 INFO  (searcherExecutor-7-thread-1-processing-x:url_lookup_core) [   x:url_lookup_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-12-12 05:54:23.842 INFO  (searcherExecutor-7-thread-1-processing-x:url_lookup_core) [   x:url_lookup_core] o.a.s.c.SolrCore [url_lookup_core] Registered new searcher Searcher@6cf5f207[url_lookup_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_8(6.3.0):C100007)))}
+2016-12-12 05:54:23.846 INFO  (Thread-16) [   x:url_lookup_core] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-12-12 05:54:23.849 INFO  (Thread-16) [   x:url_lookup_core] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-12-12 05:54:23.850 INFO  (Thread-16) [   x:url_lookup_core] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2016-12-12 05:54:23.850 INFO  (Thread-16) [   x:url_lookup_core] o.a.s.h.d.DocBuilder Time taken = 0:0:7.775
+2016-12-12 05:54:23.850 INFO  (Thread-16) [   x:url_lookup_core] o.a.s.u.p.LogUpdateProcessorFactory [url_lookup_core]  webapp=/solr path=/dataimport params={core=url_lookup_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1481522022676&verbose=false} status=0 QTime=6{deleteByQuery=*:* (-1553488471470899200),add=[1 (1553488471760306176), 2 (1553488471762403328), 3 (1553488471762403329), 4 (1553488471765549056), 5 (1553488471765549057), 6 (1553488471765549058), 7 (1553488471766597632), 8 (1553488471766597633), 9 (1553488471766597634), 10 (1553488471767646208), ... (100007 adds)],commit=} 0 7798
+2016-12-12 05:54:39.235 INFO  (qtp1528637575-20) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1481522022676} status=0 QTime=0
+2016-12-12 05:54:48.350 INFO  (qtp1528637575-17) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/select params={q=url_to:"/Women/Shoes/"&indent=on&wt=json} hits=1 status=0 QTime=2
+2016-12-12 05:55:07.656 INFO  (qtp1528637575-14) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/select params={q=url_to:"GE5RO3L2F59VCT7HG0W467XN05JE4BOWJRZUC04TBZ18TCCVFS"&indent=on&wt=json} hits=1 status=0 QTime=5
+2016-12-12 05:57:48.126 INFO  (qtp1528637575-19) [   x:url_lookup_core] o.a.s.c.S.Request [url_lookup_core]  webapp=/solr path=/select params={q=url_to:"BTOUKRZRZQNCTT584VR3XXROR5PK0W91SZOUS8ZBAA8FH4R9LM"&indent=on&wt=json} hits=1 status=0 QTime=1
